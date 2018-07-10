@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
     <link rel="stylesheet" href="css/join_login.css">
-    <title>로그인하기</title>
+    <title>회원가입</title>
 </head>
 
 <body class="login-page">
@@ -19,7 +19,7 @@
     <main>
         <div class="login-block">
             <img src="http://scanfcode.com/wp-content/uploads/2017/09/cropped-Untitled-1.png" alt="Scanfcode">
-            <h1>로그인 페이지</h1>
+            <h1>회원가입 페이지</h1>
 
             <form>
                 <div class="form-group">
@@ -27,7 +27,18 @@
                         <span class="input-group-addon">
                             <i class="fa fa-user ti-user"></i>
                         </span>
-                        <input type="text" class="form-control" placeholder="ID를 입력해주세요" id="id" required>
+                        <input type="text" class="form-control" placeholder="ID를 입력해주세요" id="id">
+                    </div>
+                </div>
+
+                <hr class="hr-xs">
+
+                <div class="form-group">
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                            <i class="fa fa-envelope ti-email"></i>
+                        </span>
+                        <input type="text" class="form-control" placeholder="이메일을 입력해주세요" id="email">
                     </div>
                 </div>
 
@@ -38,16 +49,16 @@
                         <span class="input-group-addon">
                             <i class="fa fa-lock ti-unlock"></i>
                         </span>
-                        <input type="password" class="form-control" placeholder="비밀번호를 입력해주세요" id="pw" required>
+                        <input type="password" class="form-control" placeholder="비밀번호를 입력해주세요" id="pw">
                     </div>
                 </div>
-                <button class="btn btn-primary btn-block" type="button" onclick="login()">로그인 하기</button>
+                <button class="btn btn-primary btn-block" type="button" onclick="complete()">회원가입 하기</button>
             </form>
         </div>
 
         <div class="login-links">
-            <p class="text-center">계정이 없으신가요?
-                <a class="txt-brand" href="./join.html">회원가입 하러가기</a>
+            <p class="text-center">이미 계정이 있으신가요?
+                <a class="txt-brand" href="./login.html">로그인하러가기</a>
             </p>
         </div>
 
@@ -56,19 +67,26 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script>
-        function login() {
-            if (document.querySelector('#id').value === 'fds') {
-                if (document.querySelector('#pw').value === '1234') {
-                    swal({
-                        icon: "success",
-                        title: "로그인이 완료되었습니다.",
-                    }).then((value) => {
-                        window.location.replace('/')
-                    })
+        function complete() {
+            if (document.querySelector('#id').value != null) {
+                if (document.querySelector('#email').value != null) {
+                    if (document.querySelector('#pw').value != null) {
+                        swal({
+                            icon: "success",
+                            title: "회원가입이 완료되었습니다.",
+                        }).then((value) => {
+                            window.location.replace('/login.html')
+                        })
+                    } else {
+                        swal({
+                            icon: "error",
+                            title: "비밀번호를 확인해주세요",
+                        });
+                    }
                 } else {
                     swal({
                         icon: "error",
-                        title: "비밀번호를 확인해주세요",
+                        title: "이메일을 확인해주세요",
                     });
                 }
             } else {

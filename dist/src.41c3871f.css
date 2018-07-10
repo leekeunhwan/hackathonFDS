@@ -1,50 +1,3 @@
-@charset "UTF-8";
-/* 메인페이지 CSS */
-a {
-  text-decoration: none; }
-
-.jumbotron {
-  background-image: url("https://kmong.com/img/main/desktop/bg_main_visual_01.png");
-  height: 50vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-  text-align: right; }
-
-.navigator {
-  position: absolute;
-  width: 100%;
-  text-align: right;
-  top: 5vh;
-  padding: 0 15vh; }
-
-.navigator a {
-  color: salmon;
-  font-weight: bold; }
-
-.navigator .clearfix {
-  float: left;
-  overflow: auto;
-  zoom: 1; }
-
-.navigator__right a {
-  margin: 0 10px; }
-
-.category__controller {
-  text-align: center; }
-
-.btn-default {
-  height: 60px; }
-
-.baby__select,
-.btn-group,
-.category__select {
-  margin-bottom: 10px; }
-
-.btn-default.active,
-.btn-default:active {
-  color: white;
-  background-color: salmon; }
-
 /* BASIC SETUP  COLOR : #e67e22 */
 * {
   margin: 0;
@@ -122,15 +75,58 @@ h3 {
 
 h2:after {
   display: block;
-  height: 2px;
-  background-color: #e67e22;
+  height: 3px;
+  background-color: #e84949;
   content: " ";
-  width: 200px;
+  width: 250px;
   margin: 30px auto; }
+
+/* MAIN CAUROSEL */
+a {
+  text-decoration: none; }
+
+.jumbotron {
+  background-image: url("https://kmong.com/img/main/desktop/bg_main_visual_01.png");
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: right; }
+
+.navigator {
+  position: absolute;
+  width: 100%;
+  text-align: right;
+  top: 5vh;
+  padding: 0 28vh; }
+
+.navigator a {
+  color: salmon;
+  font-weight: bold; }
+
+.navigator .clearfix {
+  float: left;
+  overflow: auto;
+  zoom: 1; }
+
+.navigator__right a {
+  margin: 0 10px; }
+
+.category__controller {
+  text-align: center; }
+
+.baby__select,
+.btn-group,
+.category__select {
+  margin-bottom: 10px; }
+
+.btn-default.active,
+.btn-default:active {
+  color: white;
+  background-color: salmon; }
 
 /* TESTIMONIALS */
 .section-testimonial {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/back-customers.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(240, 169, 169, 0.8));
   background-size: cover;
   color: #fff;
   background-attachment: fixed; }
@@ -201,7 +197,7 @@ h2:after {
 
 .section-tutor .btn-view-tutor {
   width: 90%;
-  background-color: cadetblue;
+  background-color: #e84949;
   color: #fff; }
 
 .section-tutor .description {
@@ -210,11 +206,11 @@ h2:after {
   margin-bottom: 40px; }
 
 .section-tutor .view-class {
-  margin-top: 20%; }
+  margin-top: 18%; }
 
 /* FOOTER */
 footer {
-  background-color: #333;
+  background-color: #e84949;
   padding: 45px;
   font-size: 80%; }
 
@@ -241,12 +237,12 @@ footer {
 .social-links > li > a:visited {
   text-decoration: none;
   border: 0;
-  color: #888;
+  color: #fff;
   transition: color 0.2s; }
 
 .footer-nav > li > a:hover,
 .footer-nav > li > a:active {
-  color: #ddd; }
+  color: #d91d1d; }
 
 .social-links > li > a:link,
 .social-links > li > a:visited {
@@ -264,10 +260,10 @@ footer {
 .social-links .fa-twitter-square:hover,
 .social-links .fa-google-plus-square:hover,
 .social-links .fa-instagram:hover {
-  color: #ddd; }
+  color: #d91d1d; }
 
 footer > div > p {
-  color: #888;
+  color: #fff;
   text-align: center;
   margin-top: 20px;
   font-size: 90%; }
