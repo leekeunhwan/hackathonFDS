@@ -1,5 +1,112 @@
-@charset "UTF-8";
-/* 메인페이지 CSS */
+@charset 'utf-8';
+/* BASIC SETUP  START COLOR : #eded34 */
+
+/* BASIC SETUP  PINK COLOR : #e84949 */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: #fff;
+  color: #555;
+  font-family: 'Arial', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+/* GENERAL MODULES */
+
+.clearfix {
+  zoom: 1
+}
+
+.clearfix:after {
+  content: '.';
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+.offScreen {
+  background-color: #777373;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  margin: -1px;
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  font-size: 0;
+  line-height: 0;
+}
+
+/* REUSABLE COMPONENTS */
+
+.full-row {
+  width: 100vw;
+}
+
+.row {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+section {
+  padding: 80px 0;
+}
+
+/* ---------------------- */
+
+.box {
+  padding: 1%;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 300%;
+  text-transform: uppercase;
+}
+
+h1 {
+  margin: 0;
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 240%;
+  word-spacing: 4px;
+  letter-spacing: 1px;
+}
+
+h2 {
+  font-size: 180%;
+  word-spacing: 2px;
+  text-align: center;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+
+h3 {
+  font-size: 110%;
+  margin-bottom: 15px;
+}
+
+h2:after {
+  display: block;
+  height: 3px;
+  background-color: #e84949;
+  content: " ";
+  width: 250px;
+  margin: 30px auto;
+}
+
+/* MAIN CAUROSEL */
+
 a {
   text-decoration: none;
 }
@@ -17,7 +124,7 @@ a {
   width: 100%;
   text-align: right;
   top: 5vh;
-  padding: 0 15vh;
+  padding: 0 28vh;
 }
 
 .navigator a {
@@ -25,10 +132,8 @@ a {
   font-weight: bold;
 }
 
-.navigator .clearfix {
+.navigator .logo {
   float: left;
-  overflow: auto;
-  zoom: 1;
 }
 
 .navigator__right a {
@@ -37,10 +142,6 @@ a {
 
 .category__controller {
   text-align: center;
-}
-
-.btn-default {
-  height: 60px;
 }
 
 .baby__select,
@@ -54,4 +155,252 @@ a {
   color: white;
   background-color: salmon;
 }
-/*# sourceMappingURL=index.css.map */
+
+/* SCHOOLS PICK */
+
+.section-schools-pick .fa-won-sign,
+.section-schools-pick .fa-calendar-alt {
+  /*  font-size: 1.1rem;*/
+}
+
+.section-schools-pick .picks-image:hover .fa-star {
+  color: #eded34;
+}
+
+.section-schools-pick .picks-box {
+  display: flex;
+  justify-content: space-around;
+}
+
+.section-schools-pick .picks-image {
+  width: 23.5%;
+  float: left;
+  margin-bottom: 15px;
+  justify-content: space-between;
+  background-image: url(caurosel01.f564e6dc.jpg);
+  background-size: cover;
+  height: 280px;
+  position: relative;
+}
+
+.section-schools-pick .picks-image:hover {
+  opacity: 0.7;
+}
+
+.section-schools-pick .image-caption {
+  position: absolute;
+  width: 100%;
+  padding: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  color: transparent;
+}
+
+.section-schools-pick .picks-image:hover .image-caption {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #000000;
+}
+
+.section-schools-pick .pick-category {
+  font-size: 0.8rem;
+  padding-bottom: 8px;
+}
+
+.section-schools-pick .pick-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding-bottom: 8px;
+}
+
+.section-schools-pick .pick-price,
+.section-schools-pick .pick-date {
+  padding-bottom: 6px;
+}
+
+.section-schools-pick .pick-date,
+.section-schools-pick .pick-price,
+.section-schools-pick .pick-rate {
+  font-size: 0.8rem;
+}
+
+/* POPULAR PICKS */
+
+.section-popular-pick {
+  margin-top: -100px;
+}
+
+/* TESTIMONIALS */
+
+.section-testimonial {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(240, 169, 169, 0.8));
+  background-size: cover;
+  color: #fff;
+  background-attachment: fixed;
+}
+
+.section-testimonial .row div {
+  width: 30%;
+  float: left;
+  margin: 0 1%;
+}
+
+.section-testimonial .start-rate {
+  text-align: center;
+  color: #eded34;
+}
+
+.section-testimonial>div>div>p {
+  padding: 2%;
+  font-style: italic;
+  line-height: 145%;
+  position: relative;
+  margin-top: 10px;
+}
+
+.section-testimonial>div>div>.writter:before {
+  content: "\201C";
+  font-size: 500%;
+  display: block;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+}
+
+.section-testimonial>div>div>img {
+  height: 50px;
+  border-radius: 50%;
+  margin: 5px 10px 0;
+  vertical-align: middle;
+}
+
+/* TUTOR */
+
+.section-tutor .image-tutor {
+  width: 35%;
+  float: left;
+  text-align: center;
+}
+
+.section-tutor .image-tutor img {
+  width: 200px;
+  height: 200px;
+  border-radius: 200px;
+}
+
+.section-tutor .image-tutor .tutor-name {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.section-tutor .start-rate {
+  margin: 15px 0;
+}
+
+.section-tutor .text-tutor {
+  width: 65%;
+  float: left;
+}
+
+.section-tutor .writter {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 30px 0 20px 0;
+}
+
+.section-tutor .writter-sub {
+  color: #777;
+  margin-bottom: 40px;
+}
+
+.section-tutor .when {
+  margin-bottom: 10px;
+}
+
+.section-tutor .btn-view-tutor {
+  width: 90%;
+  background-color: #e84949;
+  color: #fff;
+}
+
+.section-tutor .description {
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+}
+
+.section-tutor .view-class {
+  margin-top: 18%;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: #e84949;
+  padding: 45px;
+  font-size: 80%;
+}
+
+.footer-nav {
+  list-style: none;
+  float: left;
+}
+
+.social-links {
+  list-style: none;
+  float: right;
+}
+
+.footer-nav li,
+.social-links li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child {
+  margin-right: 0px;
+}
+
+.footer-nav>li>a:link,
+.footer-nav>li>a:visited,
+.social-links>li>a:link,
+.social-links>li>a:visited {
+  text-decoration: none;
+  border: 0;
+  color: #fff;
+  transition: color 0.2s;
+}
+
+.footer-nav>li>a:hover,
+.footer-nav>li>a:active {
+  color: #d91d1d;
+}
+
+.social-links>li>a:link,
+.social-links>li>a:visited {
+  font-size: 140%;
+  transition: color 0.2s;
+}
+
+.social-links .fa-facebook-square,
+.social-links .fa-twitter-square,
+.social-links .fa-google-plus-square,
+.social-links .fa-instagram {
+  transition: color 0.2s;
+  font-size: 1.6rem;
+}
+
+.social-links .fa-facebook-square:hover,
+.social-links .fa-twitter-square:hover,
+.social-links .fa-google-plus-square:hover,
+.social-links .fa-instagram:hover {
+  color: #d91d1d;
+}
+
+footer>div>p {
+  color: #fff;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 90%;
+}

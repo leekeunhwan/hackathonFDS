@@ -1,9 +1,12 @@
-/* BASIC SETUP  COLOR : #e67e22 */
+@charset 'utf-8';
+/* BASIC SETUP  START COLOR : #eded34 */
+
+/* BASIC SETUP  PINK COLOR : #e84949 */
+
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html,
@@ -18,8 +21,9 @@ body {
 }
 
 /* GENERAL MODULES */
+
 .clearfix {
-  zoom: 1;
+  zoom: 1
 }
 
 .clearfix:after {
@@ -43,6 +47,11 @@ body {
 }
 
 /* REUSABLE COMPONENTS */
+
+.full-row {
+  width: 100vw;
+}
+
 .row {
   max-width: 1200px;
   margin: 0 auto;
@@ -53,6 +62,7 @@ section {
 }
 
 /* ---------------------- */
+
 .box {
   padding: 1%;
 }
@@ -96,6 +106,7 @@ h2:after {
 }
 
 /* MAIN CAUROSEL */
+
 a {
   text-decoration: none;
 }
@@ -121,10 +132,8 @@ a {
   font-weight: bold;
 }
 
-.navigator .clearfix {
+.navigator .logo {
   float: left;
-  overflow: auto;
-  zoom: 1;
 }
 
 .navigator__right a {
@@ -147,9 +156,83 @@ a {
   background-color: salmon;
 }
 
+/* SCHOOLS PICK */
+
+.section-schools-pick .fa-won-sign,
+.section-schools-pick .fa-calendar-alt {
+  /*  font-size: 1.1rem;*/
+}
+
+.section-schools-pick .picks-image:hover .fa-star {
+  color: #eded34;
+}
+
+.section-schools-pick .picks-box {
+  display: flex;
+  justify-content: space-around;
+}
+
+.section-schools-pick .picks-image {
+  width: 23.5%;
+  float: left;
+  margin-bottom: 15px;
+  justify-content: space-between;
+  background-image: url(img/caurosel01.jpg);
+  background-size: cover;
+  height: 280px;
+  position: relative;
+}
+
+.section-schools-pick .picks-image:hover {
+  opacity: 0.7;
+}
+
+.section-schools-pick .image-caption {
+  position: absolute;
+  width: 100%;
+  padding: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  color: transparent;
+}
+
+.section-schools-pick .picks-image:hover .image-caption {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #000000;
+}
+
+.section-schools-pick .pick-category {
+  font-size: 0.8rem;
+  padding-bottom: 8px;
+}
+
+.section-schools-pick .pick-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding-bottom: 8px;
+}
+
+.section-schools-pick .pick-price,
+.section-schools-pick .pick-date {
+  padding-bottom: 6px;
+}
+
+.section-schools-pick .pick-date,
+.section-schools-pick .pick-price,
+.section-schools-pick .pick-rate {
+  font-size: 0.8rem;
+}
+
+/* POPULAR PICKS */
+
+.section-popular-pick {
+  margin-top: -100px;
+}
+
 /* TESTIMONIALS */
+
 .section-testimonial {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(240, 169, 169, 0.8)));
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(240, 169, 169, 0.8));
   background-size: cover;
   color: #fff;
@@ -167,7 +250,7 @@ a {
   color: #eded34;
 }
 
-.section-testimonial > div > div > p {
+.section-testimonial>div>div>p {
   padding: 2%;
   font-style: italic;
   line-height: 145%;
@@ -175,7 +258,7 @@ a {
   margin-top: 10px;
 }
 
-.section-testimonial > div > div > .writter:before {
+.section-testimonial>div>div>.writter:before {
   content: "\201C";
   font-size: 500%;
   display: block;
@@ -184,7 +267,7 @@ a {
   left: -5px;
 }
 
-.section-testimonial > div > div > img {
+.section-testimonial>div>div>img {
   height: 50px;
   border-radius: 50%;
   margin: 5px 10px 0;
@@ -192,6 +275,7 @@ a {
 }
 
 /* TUTOR */
+
 .section-tutor .image-tutor {
   width: 35%;
   float: left;
@@ -250,6 +334,7 @@ a {
 }
 
 /* FOOTER */
+
 footer {
   background-color: #e84949;
   padding: 45px;
@@ -277,26 +362,24 @@ footer {
   margin-right: 0px;
 }
 
-.footer-nav > li > a:link,
-.footer-nav > li > a:visited,
-.social-links > li > a:link,
-.social-links > li > a:visited {
+.footer-nav>li>a:link,
+.footer-nav>li>a:visited,
+.social-links>li>a:link,
+.social-links>li>a:visited {
   text-decoration: none;
   border: 0;
   color: #fff;
-  -webkit-transition: color 0.2s;
   transition: color 0.2s;
 }
 
-.footer-nav > li > a:hover,
-.footer-nav > li > a:active {
+.footer-nav>li>a:hover,
+.footer-nav>li>a:active {
   color: #d91d1d;
 }
 
-.social-links > li > a:link,
-.social-links > li > a:visited {
+.social-links>li>a:link,
+.social-links>li>a:visited {
   font-size: 140%;
-  -webkit-transition: color 0.2s;
   transition: color 0.2s;
 }
 
@@ -304,7 +387,6 @@ footer {
 .social-links .fa-twitter-square,
 .social-links .fa-google-plus-square,
 .social-links .fa-instagram {
-  -webkit-transition: color 0.2s;
   transition: color 0.2s;
   font-size: 1.6rem;
 }
@@ -316,10 +398,9 @@ footer {
   color: #d91d1d;
 }
 
-footer > div > p {
+footer>div>p {
   color: #fff;
   text-align: center;
   margin-top: 20px;
   font-size: 90%;
 }
-/*# sourceMappingURL=index.css.map */
