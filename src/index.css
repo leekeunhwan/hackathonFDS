@@ -1,7 +1,8 @@
-<<<<<<< HEAD
 @charset 'utf-8';
 
-/* BASIC SETUP  COLOR : #e67e22 */
+/* BASIC SETUP  START COLOR : #eded34 */
+/* BASIC SETUP  PINK COLOR : #e84949 */
+
 * {
     margin: 0;
     padding: 0;
@@ -46,6 +47,10 @@ body {
 }
 
 /* REUSABLE COMPONENTS */
+
+.full-row {
+  width: 100vw;
+}
 
 .row {
     max-width: 1200px;
@@ -94,17 +99,145 @@ h3 {
 
 h2:after {
     display: block;
-    height: 2px;
-    background-color: #e67e22;
+    height: 3px;
+    background-color: #e84949;
     content: " ";
-    width: 200px;
+    width: 250px;
     margin: 30px auto;
+}
+
+
+/* MAIN CAUROSEL */
+
+a {
+  text-decoration: none;
+}
+
+.jumbotron {
+  background-image: url("https://kmong.com/img/main/desktop/bg_main_visual_01.png");
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: right;
+}
+
+.navigator {
+  position: absolute;
+  width: 100%;
+  text-align: right;
+  top: 5vh;
+  padding: 0 15vh;
+}
+
+.navigator a {
+  color: salmon;
+  font-weight: bold;
+}
+
+.navigator .logo {
+  float: left;
+}
+
+.navigator__right a {
+  margin: 0 10px;
+}
+
+.category__controller {
+  text-align: center;
+}
+
+.baby__select,
+.btn-group,
+.category__select {
+  margin-bottom: 10px;
+}
+
+.btn-default.active,
+.btn-default:active {
+  color: white;
+  background-color: salmon;
+}
+
+/* SCHOOLS PICK */
+
+.section-schools-pick .fa-won-sign,
+.section-schools-pick .fa-calendar-alt {
+/*  font-size: 1.1rem;*/
+}
+
+.section-schools-pick .picks-image:hover .fa-star {
+  color: #eded34;
+}
+
+.section-schools-pick .picks-box {
+  display: flex;
+  justify-content: space-around;
+}
+
+.section-schools-pick .picks-image {
+  width: 23.5%;
+  float: left;
+  margin-bottom: 15px;
+  justify-content: space-between;
+  background-image: url(img/caurosel01.jpg);
+  background-size: cover;
+  height: 280px;
+  position: relative;
+}
+
+.section-schools-pick .picks-image:hover {
+  opacity: 0.7;
+}
+
+.section-schools-pick .image-caption {
+  position: absolute;
+  width: 100%;
+  padding: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  color: transparent;
+}
+
+.section-schools-pick .picks-image:hover .image-caption {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #000000;
+}
+
+.section-schools-pick .pick-category {
+  font-size: 0.8rem;
+  padding-bottom: 8px; 
+}
+
+.section-schools-pick .pick-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding-bottom: 8px; 
+}
+
+.section-schools-pick .pick-price,
+.section-schools-pick .pick-date {
+  padding-bottom: 6px;
+}
+
+.section-schools-pick .pick-date,
+.section-schools-pick .pick-price,
+.section-schools-pick .pick-rate {
+ font-size: 0.8rem; 
+}
+
+
+
+/* POPULAR PICKS */
+
+.section-popular-pick {
+  margin-top: -100px;
 }
 
 /* TESTIMONIALS */
 
 .section-testimonial {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/back-customers.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(240, 169, 169, 0.8));
     background-size: cover;
     color: #fff;
     background-attachment: fixed;
@@ -191,7 +324,7 @@ h2:after {
 
 .section-tutor .btn-view-tutor {
   width: 90%;
-  background-color: cadetblue;
+  background-color: #e84949;
   color: #fff;
 }
 
@@ -202,7 +335,7 @@ h2:after {
 }
 
 .section-tutor .view-class {
-  margin-top: 20%;
+  margin-top: 18%;
 }
 
 
@@ -210,7 +343,7 @@ h2:after {
 /* FOOTER */
 
 footer {
-    background-color: #333;
+    background-color: #e84949;
     padding: 45px;
     font-size: 80%;
 }
@@ -242,13 +375,13 @@ footer {
 .social-links > li > a:visited {
     text-decoration: none;
     border: 0;
-    color: #888;
+    color: #fff;
     transition: color 0.2s;
 }
 
 .footer-nav > li > a:hover,
 .footer-nav > li > a:active {
-    color: #ddd;
+    color: #d91d1d;
 }
 
 .social-links > li > a:link,
@@ -269,67 +402,13 @@ footer {
 .social-links .fa-twitter-square:hover, 
 .social-links .fa-google-plus-square:hover,
 .social-links .fa-instagram:hover {
-  color: #ddd;
+  color: #d91d1d;
 }
 
 footer > div > p {
-    color: #888;
+    color: #fff;
     text-align: center;
     margin-top: 20px;
     font-size: 90%;
 }
-=======
-@charset "UTF-8";
-/* 메인페이지 CSS */
-a {
-  text-decoration: none;
-}
 
-.jumbotron {
-  background-image: url("https://kmong.com/img/main/desktop/bg_main_visual_01.png");
-  height: 50vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-  text-align: right;
-}
-
-.navigator {
-  position: absolute;
-  width: 100%;
-  text-align: right;
-  top: 5vh;
-  padding: 0 15vh;
-}
-
-.navigator a {
-  color: salmon;
-  font-weight: bold;
-}
-
-.navigator .clearfix {
-  float: left;
-  overflow: auto;
-  zoom: 1;
-}
-
-.navigator__right a {
-  margin: 0 10px;
-}
-
-.category__controller {
-  text-align: center;
-}
-
-.baby__select,
-.btn-group,
-.category__select {
-  margin-bottom: 10px;
-}
-
-.btn-default.active,
-.btn-default:active {
-  color: white;
-  background-color: salmon;
-}
-/*# sourceMappingURL=index.css.map */
->>>>>>> 42ee059a62f9ded18592dce6b5fa8ad5feb389c5
