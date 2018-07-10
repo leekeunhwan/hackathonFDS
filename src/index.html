@@ -6,16 +6,141 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
-    <title>first initial</title>
+    <link rel="stylesheet" href="index.scss">
+
+    <title>이름은 정해지면 넣기</title>
 </head>
 
 <body>
-    하이
+    <!--메인화면 캐러셀-->
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        </ol>
+
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <div class="navigator">
+                    <a class="clearfix" href="#">이름은 정해지면 넣기</a>
+                    <span class="navigator__right">
+                        <a href="#">판매등록하기</a>
+                        <a href="#">로그인</a>
+                        <a href="#">무료 회원가입하기</a>
+                    </span>
+                </div>
+                <img src="https://files.slack.com/files-pri/TBLUBCA9E-FBM2ATEBA/________________________.jpg" alt="..." style="width: 100%; height: 600px; object-fit: 100%;">
+                <div class="carousel-caption">
+
+                </div>
+            </div>
+            <div class="item">
+                <div class="navigator">
+                    <a class="clearfix" href="#">이름은 정해지면 넣기</a>
+                    <span class="navigator__right">
+                        <a href="#">판매등록하기</a>
+                        <a href="#">로그인</a>
+                        <a href="#">무료 회원가입하기</a>
+                    </span>
+                </div>
+                <img src="https://files.slack.com/files-pri/TBLUBCA9E-FBMNG2YNN/bio-or-non-bio-for-baby-clothes-681656.jpg" alt="..." style="width: 100%; height: 600px; object-fit: 100%;">
+                <div class="carousel-caption">
+
+                </div>
+            </div>
+            <div class="item">
+                <div class="navigator">
+                    <a class="clearfix" href="#">이름은 정해지면 넣기</a>
+                    <span class="navigator__right">
+                        <a href="#">판매등록하기</a>
+                        <a href="#">로그인</a>
+                        <a href="#">무료 회원가입하기</a>
+                    </span>
+                </div>
+                <img src="https://files.slack.com/files-pri/TBLUBCA9E-FBM2CNZ8Q/_____________________.jpg" alt="..." style="width: 100%; height: 600px; object-fit: 100%;">
+                <div class="carousel-caption">
+
+                </div>
+            </div>
+        </div>
+
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <div class="category__controller">
+        <div class="sort__menu">
+            <!--정렬 기준 버튼-->
+            <div class="baby__select">
+                아기 개월 수
+            </div>
+            <div class="btn-group" data-toggle="buttons">
+                <label class="btn btn-default">
+                    <input type="checkbox" autocomplete="off" checked> 출산전
+                </label>
+                <label class="btn btn-default">
+                    <input type="checkbox" autocomplete="off"> 0~3개월
+                </label>
+                <label class="btn btn-default">
+                    <input type="checkbox" autocomplete="off"> 4~6개월
+                </label>
+                <label class="btn btn-default">
+                    <input type="checkbox" autocomplete="off"> 7~12개월
+                </label>
+                <label class="btn btn-default">
+                    <input type="checkbox" autocomplete="off"> 13~24개월
+                </label>
+            </div>
+
+
+            <div class="category__select">
+                <h2>카테고리</h2>
+            </div>
+            <div class="btn-group" data-toggle="buttons">
+                <label class="btn btn-default">
+                    <input type="checkbox" autocomplete="off" checked> 이유식
+                </label>
+                <label class="btn btn-default">
+                    <input type="checkbox" autocomplete="off"> 옷
+                </label>
+                <label class="btn btn-default">
+                    <input type="checkbox" autocomplete="off"> 생활용품
+                </label>
+                <label class="btn btn-default">
+                    <input type="checkbox" autocomplete="off"> 장난감
+                </label>
+                <label class="btn btn-default">
+                    <input type="checkbox" autocomplete="off"> 육아교육
+                </label>
+                <label class="btn btn-default">
+                    <input type="checkbox" autocomplete="off"> 산모건강
+                </label>
+            </div>
+        </div>
+        <button class="btn btn-primary">클래스 찾기</button>
+    </div>
+
+
+
+
+
     <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
+
 </body>
 
 </html>
