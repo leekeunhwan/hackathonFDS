@@ -39,6 +39,10 @@ a {
   text-align: center;
 }
 
+.btn-default {
+  height: 60px;
+}
+
 .baby__select,
 .btn-group,
 .category__select {
