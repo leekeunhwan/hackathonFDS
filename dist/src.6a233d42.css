@@ -1,18 +1,57 @@
 @charset "UTF-8";
 /* 메인페이지 CSS */
+a {
+  text-decoration: none;
+}
+
 .jumbotron {
   background-image: url("https://kmong.com/img/main/desktop/bg_main_visual_01.png");
-  height: 430px;
+  height: 50vh;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
+  text-align: right;
 }
 
-.navbar-default {
-  background: transparent;
-  border: 0px transparent solid;
+.navigator {
+  position: absolute;
+  width: 100%;
+  text-align: right;
+  top: 5vh;
+  padding: 0 15vh;
 }
 
-body {
-  background: red;
+.navigator a {
+  color: salmon;
+  font-weight: bold;
+}
+
+.navigator .clearfix {
+  float: left;
+  overflow: auto;
+  zoom: 1;
+}
+
+.navigator__right a {
+  margin: 0 10px;
+}
+
+.category__controller {
+  text-align: center;
+}
+
+.btn-default {
+  height: 60px;
+}
+
+.baby__select,
+.btn-group,
+.category__select {
+  margin-bottom: 10px;
+}
+
+.btn-default.active,
+.btn-default:active {
+  color: white;
+  background-color: salmon;
 }
 /*# sourceMappingURL=index.css.map */
