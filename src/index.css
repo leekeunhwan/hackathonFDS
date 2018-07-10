@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @charset 'utf-8';
 
 /* BASIC SETUP  COLOR : #e67e22 */
@@ -277,3 +278,58 @@ footer > div > p {
     margin-top: 20px;
     font-size: 90%;
 }
+=======
+@charset "UTF-8";
+/* 메인페이지 CSS */
+a {
+  text-decoration: none;
+}
+
+.jumbotron {
+  background-image: url("https://kmong.com/img/main/desktop/bg_main_visual_01.png");
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: right;
+}
+
+.navigator {
+  position: absolute;
+  width: 100%;
+  text-align: right;
+  top: 5vh;
+  padding: 0 15vh;
+}
+
+.navigator a {
+  color: salmon;
+  font-weight: bold;
+}
+
+.navigator .clearfix {
+  float: left;
+  overflow: auto;
+  zoom: 1;
+}
+
+.navigator__right a {
+  margin: 0 10px;
+}
+
+.category__controller {
+  text-align: center;
+}
+
+.baby__select,
+.btn-group,
+.category__select {
+  margin-bottom: 10px;
+}
+
+.btn-default.active,
+.btn-default:active {
+  color: white;
+  background-color: salmon;
+}
+/*# sourceMappingURL=index.css.map */
+>>>>>>> 42ee059a62f9ded18592dce6b5fa8ad5feb389c5
