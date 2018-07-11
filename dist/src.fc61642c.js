@@ -107,14 +107,6 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 // 메인 페이지 자바스크립트
 
 // Category Sorting Logic
-var sortBaby = document.querySelector(".btn-group");
-
-$(".category__find").click(function () {
-  $(".sorting").hide();
-  if (sortBaby.querySelector("label").textContent == "출산전") {
-    $("baby-option1").show();
-  }
-});
 },{}],15:[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
