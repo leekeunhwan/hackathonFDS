@@ -16,7 +16,7 @@ body {
   color: #555;
   font-family: 'Noto Sans', 'Arial', sans-serif;
   font-weight: 300;
-  font-size: 20px;
+  font-size: 1rem;
   text-rendering: optimizeLegibility;
   overflow-x: hidden;
 }
@@ -106,6 +106,14 @@ h2:after {
   margin: 30px auto;
 }
 
+.dot-line {
+  background-color: #ddd;
+  border: 0.5px dashed #ddd;
+  display: block;
+  height: 1px;
+  margin: .5rem 0;
+}
+
 /* MAIN CAUROSEL */
 
 a {
@@ -162,11 +170,6 @@ a {
 
 /* SCHOOLS PICK */
 
-.section-schools-pick .fa-won-sign,
-.section-schools-pick .fa-calendar-alt {
-  /*  font-size: 1.1rem;*/
-}
-
 .section-schools-pick .picks-image:hover .fa-star {
   color: #eded34;
 }
@@ -202,7 +205,7 @@ a {
 }
 
 .section-schools-pick .picks-image:hover .image-caption {
-  background-color: rgba(255, 255, 255, 0.5);
+  /* background-color: rgba(255, 255, 255, 0.5); */
   color: #000000;
 }
 
@@ -407,4 +410,310 @@ footer>div>p {
   text-align: center;
   margin-top: 20px;
   font-size: 90%;
+}
+
+/* ---- detail page ----- */
+
+/* 카로셀 */
+
+.detail-carousel {
+  height: 40vh;
+}
+
+.detail-carousel .carousel-inner {
+  height: 40vh;
+}
+
+/* CLASS-DETAIL */
+
+.detail-nav {
+  overflow: hidden;
+  margin-left: 15px;
+}
+
+.detail-nav .nav-tabs {
+  z-index: 99999;
+  height: 50px;
+  display: flex;
+}
+
+.detail-nav .nav-item {
+  background-color: transparent;
+  width: 120px;
+  height: 50px;
+  display: flex;
+  align-items: flex-end;
+  margin-left: 10px;
+  padding: 0 0 5px 10px;
+  color: #000000;
+  list-style: none;
+  text-decoration: none;
+}
+
+.detail-nav .nav-item:hover {
+  background-color: #e84949;
+  color: #fff;
+}
+
+.sticky {
+  position: fixed;
+  background-color: #ddd;
+  top: 0;
+  width: calc(100% - 36%);
+}
+
+.sticky-map {
+  position: fixed;
+  top: 0;
+}
+
+.sticky+.content {
+  padding-top: 10px;
+}
+
+.sticky-map+.content {
+  padding-top: 10px;
+}
+
+/* 첫번째 박스 */
+
+.class-detail .first-box {
+  z-index: 1;
+}
+
+.class-detail .class-name {
+  font-size: 2.6rem;
+  margin-top: 3%;
+  z-index: 1;
+}
+
+.class-detail .detail-img {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.class-detail .detail-img img {
+  border-radius: 100px;
+  z-index: 1;
+}
+
+.class-detail .totur-name {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+/* 두번째 박스 */
+
+.class-detail .second-box {
+  padding: 0 15px;
+}
+
+.class-detail .detail-icon-box {
+  text-align: center;
+}
+
+.class-detail .detail-icon {
+  font-size: 3rem;
+}
+
+.class-detail .text-grey {
+  color: #ddd;
+}
+
+.class-detail .grey {
+  color: #ddd;
+}
+
+.class-detail .third-box {
+  padding-left: 15px;
+  margin-bottom: 25px;
+}
+
+.class-detail .option-list {
+  padding: 5px 0;
+}
+
+.class-detail .good-title {
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 15px 0;
+}
+
+.class-detail .forth-box {
+  width: 750px;
+  padding-left: 15px;
+}
+
+.class-detail .class-image-box {
+  margin-top: 40px;
+  width: 750px;
+}
+
+.class-detail .class-image-box img {
+  width: 100%;
+}
+
+.class-detail .class-image-content {
+  padding-top: 15px;
+}
+
+.class-detail .class-text-content {
+  padding: 20px 0;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.class-detail .class-text-contents {
+  padding-bottom: 15px;
+}
+
+.class-detail .class-ul {
+  padding-top: 15px;
+}
+
+/* 탭 컨텐츠 박스 */
+
+.class-detail .tab-content {
+  padding: 1%;
+}
+
+/* MAP-BOX */
+
+.map-box {
+  overflow: hidden;
+}
+
+.map-box .price-box {
+  height: 400px;
+  width: 300px;
+  /* margin-left: 10%; */
+  background-color: #cfbda9;
+}
+
+/* 리뷰 탭 */
+
+.tab-rating-overall {
+  background-color: rgb(233, 233, 233);
+  height: 80px;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0 0 10px;
+}
+
+.tab-rating-overall span {
+  padding: 0 10px;
+  line-height: 35px;
+}
+
+.tab-rating-overalls {
+  display: flex;
+  justify-content: center;
+  margin-left: 10px;
+  padding: 15px 0;
+}
+
+.tab-rating-overalls span:nth-child(2n) {
+  margin-left: 70px;
+}
+
+.review-box {
+  height: 150px;
+  margin: 20px 15px 10px 15px;
+}
+
+.review-box .review-image-box {
+  position: relative;
+  text-align: center;
+  height: 130px;
+}
+
+.review-box .review-image-box img {
+  height: 130px;
+  width: 160px;
+}
+
+.review-box .review-text-box {
+  display: flex;
+  height: 130px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.review-box .review-text-box {
+  position: relative;
+}
+
+.review-box .reviewed-text::before {
+  content: "\201C";
+  font-size: 300%;
+  display: block;
+  position: absolute;
+  left: -5px;
+  top: -20px;
+}
+
+.review-box .reviewed-date {
+  top: 40%;
+  font-size: 0.9rem;
+  color: #999;
+}
+
+.review-box .best-review-mark {
+  position: absolute;
+  left: 10%;
+  top: -10%;
+  width: 60px !important;
+  height: 60px !important;
+}
+
+/* 어사이드 박스 */
+
+.price-box {
+  padding: 25px;
+  margin-left: 50px;
+}
+
+.price-box .apply-price {
+  font-size: 1.8rem;
+  padding-bottom: 10px;
+}
+
+.price-box .apply-date,
+.price-box .apply-people {
+  padding: 5px 0;
+}
+
+.price-box .apply-people {
+  margin-bottom: 10px;
+}
+
+.price-box .apply-date input,
+.price-box .apply-people input {
+  width: 90%;
+  height: 40px;
+  padding-left: 3%;
+}
+
+.price-box .fa-facebook-f,
+.price-box .fa-twitter,
+.price-box .fa-instagram {
+  width: 40px;
+  height: 40px;
+  padding: 3%;
+  border-radius: 30px;
+  color: #fff;
+  margin: 5px 10px 15px 0;
+  background-color: cornflowerblue;
+}
+
+.price-box .btn-like {
+  height: 45px;
+}
+
+.price-box .btn-apply {
+  width: 200px;
+  height: 45px;
 }
