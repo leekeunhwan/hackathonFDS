@@ -1,0 +1,369 @@
+<!--메인 페이지-->
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+  <link rel="stylesheet" href="/src.ab82ec71.css">
+  <title>first initial</title>
+</head>
+
+<body>
+  <!--메인화면 캐러셀-->
+  <div id="carousel-example-generic" class="carousel slide detail-carousel" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    </ol>
+
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="/caurosel01.6190dfde.jpg" alt="..." style="width: 100%; object-fit: 100%;">
+        <div class="carousel-caption">
+        </div>
+      </div>
+      <div class="item">
+        <img src="/caurosel02.60d15fc0.jpg" alt="..." style="width: 100%; object-fit: 100%;">
+        <div class="carousel-caption">
+        </div>
+      </div>
+      <div class="item">
+        <img src="/caurosel03.eb5165a6.jpg" alt="..." style="width: 100%; object-fit: 100%;">
+        <div class="carousel-caption">
+        </div>
+      </div>
+    </div>
+    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+  <div class="detail-box clearfix">
+    <div class="full-row">
+      <div class="col-sm-8">
+        <section class="class-detail">
+          <nav class="detail-nav" id="detail-nav">
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+              <a class="nav-item nav-link active" id="tab-class-detail" data-toggle="tab" href="#nav-class-detail" role="tab">강의상세</a>
+              <a class="nav-item nav-link" id="tab-tutor" data-toggle="tab" href="#nav-tutor" role="tab">강사소개</a>
+              <a class="nav-item nav-link" id="tab-review" data-toggle="tab" href="#nav-review" role="tab">후기</a>
+              <a class="nav-item nav-link" id="tab-qna" data-toggle="tab" href="#nav-review" role="tab">Q&A</a>
+            </div>
+          </nav>
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade active in" id="nav-class-detail" role="tabpanel">
+              <div class="first-box clearfix">
+                <div class="col-sm-9">
+                  <p class="class-name">냠냠 브로콜리 이유식</p>
+                </div>
+                <div class="col-sm-3 detail-img">
+                  <img src="/customer-1.01652143.jpg" alt="totur">
+                  <p class="totur-name">이 근환님</p>
+                </div>
+              </div>
+              <div class="dropdown-divider"></div>
+              <div class="second-box clearfix">
+                <ul>
+                  <li class="option-list">
+                    <i class="fas fa-map-marker-alt"></i>
+                    홍대 근처</li>
+                  <li class="option-list">
+                    <i class="fas fa-map-marker-alt"></i>
+                    2시간 소요</li>
+                  <li class="option-list">
+                    <i class="fas fa-map-marker-alt"></i>
+                    시간 선택 가능</li>
+                  <li class="option-list">
+                    <span class="enjoyed-cnt">4</span> / 10 (최소 2명 이상)</li>
+                  <li class="dot-line"></li>
+                  <li class="option-list">포함 / 불포함 사항</li>
+                </ul>
+                <div>
+                  <div class="col-sm-2 detail-icon-box">
+                    <i class="fas fa-parking detail-icon"></i>
+                    <p>주차가능</p>
+                  </div>
+                  <div class="col-sm-2 detail-icon-box">
+                    <i class="fas fa-users detail-icon grey"></i>
+                    <p class="text-grey">동반참관</p>
+                  </div>
+                  <div class="col-sm-2 detail-icon-box">
+                    <i class="fas fa-parking detail-icon"></i>
+                    <p>재료비포함</p>
+                  </div>
+                  <div class="col-sm-2 detail-icon-box">
+                    <i class="fas fa-parking detail-icon grey"></i>
+                    <p class="text-grey">다과포함</p>
+                  </div>
+                  <div class="col-sm-2 detail-icon-box">
+                    <i class="fas fa-parking detail-icon grey"></i>
+                    <p class="text-grey">유기농 /
+                      <br>친환경 재료</p>
+                  </div>
+                </div>
+              </div>
+              <div class="dropdown-divider"></div>
+              <div class="third-box">
+                <div>
+                  <p class="good-title">이런 점이 좋아요</p>
+                  <ul>
+                    <li class="good-content">- 유기농 인증을 받은 재료로 건강한 이유식 만들기를 실습할 수 있어요</li>
+                    <li class="good-content">- 전문적인 강사님에게 이유식 레시피 뿐만 아니라, 이유식 먹이는 방법을 전문적으로 배울 수 있어요</li>
+                    <li class="good-content">- 또래 아이를 가진 부모들과 함께 이유식 정보를 공유할 수 있어요</li>
+                  </ul>
+                  <p class="good-title">이런 분께 추천해요</p>
+                  <ul>
+                    <li class="good-content">- 10-12개월의 아이를 가진 부모 </li>
+                    <li class="good-content">- 사랑하는 아이의 밥을 직접 만들어주고 싶은 요리 초보자 예비 아빠</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="dropdown-divider"></div>
+              <div class="forth-box">
+                <div class="class-image-box">
+                  <img src="/food-making.b0b35464.jpg" alt="class">
+                </div>
+                <p class="class-image-content">이유식은 모유나 조제유에서 성인 일반식으로 넘어가는 과정에서 먹게 되는 식사형태입니다. 이유식은 아이의 치아 발달, 혀운동, 삼킨운동, 손놀림 등의 신체 발달 뿐만 아니라 아기의 올바른 정신적,
+                  정서적 발달을 도모해 준다고 합니다.</p>
+                <ul>
+                  <li class="class-image-content">- 아기에게 이유식을 먹일 때 사용할 도구 및 방법, 횟수를 전문적으로 알려드립니다 !</li>
+                  <li class="class-image-content">- 10 - 12개월 아이를 위해 건강한 재료로, 영양소가 골고루 함유된 닭고기 단호박리조또 레시피를 배워보세요 !
+                  </li>
+                </ul>
+                <div class="class-image-box">
+                  <img src="/chicken.1e0e1818.png" alt="class">
+                </div>
+                <p class="class-text-content">커리큘럼</p>
+                <ul>
+                  <li class="class-text-contents">13:00- 14:00 : 강사 소개 및 이유식 이론 수업</li>
+                  <li class="class-text-contents"> 14:00 – 15:00 : 후기 이유식 실습 ( 닭고기단호박리조또 )</li>
+                  <li class="class-text-contents">15:00 – 16:00 : 네트워크 시간 (다과 제공)</li>
+                </ul>
+                <p class="class-text-content">준비물</p>
+                <ul>
+                  <li class="class-text-contents">앞치마, 필기구 – 본인 지참</li>
+                  <li class="class-text-contents">실습 재료 (강의료 포함) – 쌀 40g, 닭가슴살 30g, 단호박 20g, 양파 10g, 분유 6g, 채소국물 400ml</li>
+                </ul>
+                <p class="class-text-content">환불 규정</p>
+                <ul>
+                  <li class="class-text-contents">[국내 환불 규정]</li>
+                  <li class="class-text-contents">- 클래스 신청 마감 4일 이전 통보시: 계약금 환급</li>
+                  <li class="class-text-contents">- 클래스 신청 마감 3일 이전 통보시: 결제 금액의 20% 배상 후 환불</li>
+                  <li class="class-text-contents">- 클래스 신청 마감 2일 이전 통보시: 결제 금액의 40% 배상 후 환불</li>
+                  <li class="class-text-contents">- 클래스 신청 마감 1일 이전 통보시: 결제 금액의 50% 배상 후 환불</li>
+                  <li class="class-text-contents">- 클래스 신청 마감 시간 이후나 당일 불참 시에는 환불 불가</li>
+                </ul>
+                <ul class="class-ul">
+                  <li class="class-text-contents">[환불 신청 방법]</li>
+                  <li class="class-text-contents">1. 해당 [자사서비스이름]을 결제한 계정으로 로그인</li>
+                  <li class="class-text-contents">2. 마이페이지 클릭</li>
+                  <li class="class-text-contents">3. 취소를 원하는 신청 클래스 보기 클릭 후 신청 취소 클릭</li>
+                  <li class="class-text-contents">4. 환불신청 절차에 따라 예금주, 은행명, 계좌번호 입력</li>
+                </ul>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="nav-tutor" role="tabpanel">
+              ..
+            </div>
+            <div class="tab-pane fade" id="nav-review" role="tabpanel">
+              <div class="tab-rating-overall">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span> 4.7</span>
+              </div>
+              <div class="tab-rating-overalls">
+                <span>커리큘럼
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </span>
+                <span>준비성
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </span>
+              </div>
+              <div class="tab-rating-overalls">
+                <span>친절도
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </span>
+                <span>시간준수
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </span>
+              </div>
+              <div class="dropdown-divider"></div>
+              <div class="review-box">
+                <div class="col-sm-3 review-image-box">
+                  <img class="best-review-mark" src="/best-mark.b45bb315.png" alt="베스트 리뷰">
+                  <img src="/cooking-class.abcb0983.jpg" alt="class">
+                </div>
+                <div class="col-sm-9 review-text-box">
+                  <p class="reviewed-text">너무 재밌었어요. 유익했고, 같이 수업들은 분들도 친절하시고.. 너무 재밌었어요. 유익했고, 같이 수업들은 분들도 친절하시고..</p>
+                  <p>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                  </p>
+                  <p class="reviewed-date">김유미님 2018-07-20</p>
+                </div>
+              </div>
+              <div class="dropdown-divider"></div>
+              <div class="review-box">
+                <div class="col-sm-3 review-image-box">
+                  <img src="/unknown-image.aa9f710a.jpg" alt="class">
+                </div>
+                <div class="col-sm-9 review-text-box">
+                  <p class="reviewed-text">너무 재밌었어요. 유익했고, 같이 수업들은 분들도 친절하시고.. 너무 재밌었어요. 유익했고, 같이 수업들은 분들도 친절하시고..</p>
+                  <p>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                  </p>
+                  <p class="reviewed-date">김유미님 2018-07-20</p>
+                </div>
+              </div>
+              <div class="dropdown-divider"></div>
+              <div class="review-box">
+                <div class="col-sm-3 review-image-box">
+                  <img src="/unknown-image.aa9f710a.jpg" alt="class">
+                </div>
+                <div class="col-sm-9 review-text-box">
+                  <p class="reviewed-text">너무 재밌었어요. 유익했고, 같이 수업들은 분들도 친절하시고.. 너무 재밌었어요. 유익했고, 같이 수업들은 분들도 친절하시고..</p>
+                  <p>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                  </p>
+                  <p class="reviewed-date">김유미님 2018-07-20</p>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="nav-qna" role="tabpanel">
+              ...
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="col-sm-4">
+        <section class="map-box">
+          <div id="map-box">
+            <div class="price-box">
+              <ul>
+                <li class="apply-price">$ 50,000</li>
+                <li class="apply-date">
+                  날짜선택 :
+                  <input type="date" value="날짜선택">
+                </li>
+                <li class="apply-people">참석인원 :
+                  <input type="number" min="1" value="1">
+                </li>
+                <li class="apply-social">
+                  <i class="fab fa-facebook-f"></i>
+                  <i class="fab fa-twitter"></i>
+                  <i class="fab fa-instagram"></i>
+                </li>
+                <li>
+                  <a class="button is-primary btn-like">
+                    <i class="fas fa-heart"></i>
+                  </a>
+                  <a class="button is-danger btn-apply">신청하기</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="row">
+      <div class="span-1-of-2 col">
+        <ul class="footer-nav">
+          <li>
+            <a href="#">About us</a>
+          </li>
+          <li>
+            <a href="#">Blog</a>
+          </li>
+          <li>
+            <a href="#">Press</a>
+          </li>
+          <li>
+            <a href="#">IOS App</a>
+          </li>
+          <li>
+            <a href="#">Android App</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col span-1-of-2">
+        <ul class="social-links">
+          <li>
+            <a href="#">
+              <i class="fab fa-facebook-square"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fab fa-twitter-square"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fab fa-google-plus-square"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <p>
+        copyright &copy; 2018 by Beigenut. All rights reserved.
+      </p>
+    </div>
+  </footer>
+  <script defer="" src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  <script src="/detailPage.5c8fa464.js"></script>
+</body>
+
+</html>
