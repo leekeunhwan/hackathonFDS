@@ -1,0 +1,287 @@
+/* REUSABLE COMPONENTS */
+
+.full-row {
+    width: 100vw;
+}
+
+.row {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 80px 0;
+}
+
+/* TEMPORARY NAV */
+
+.navigator {
+    position: relative;
+    width: 100%;
+    text-align: right;
+    top: 1.5vh;
+    padding: 0 28vh;
+    height: 50px;
+}
+
+.navigator a {
+    color: salmon;
+    font-weight: bold;
+}
+
+.navigator .logo {
+    float: left;
+}
+
+.navigator__right a {
+    margin: 0 10px;
+}
+
+/* CATEGORY */
+
+.dropdown {
+    margin-left: 900px;
+}
+
+.category {
+    font-weight: bold;
+    margin: 0.5em 0 0 3em
+}
+
+.category1 {
+    font-weight: bold;
+}
+
+.category1,
+.category__button,
+.sorting__button {
+    margin: 0.5em 0 0 1em;
+}
+
+.control {
+    margin: 0.5em;
+}
+
+.category__baby,
+.category__class {
+    margin: 1em 0;
+    height: 100%;
+}
+
+.category__button,
+.sorting__button {
+    height: 28px;
+}
+
+.category__selectButton {
+    margin-top: 1em;
+}
+
+.category__tag {
+    background: salmon;
+    height: 120%;
+}
+
+.field.is-grouped {
+    display: block;
+}
+
+.tagging {
+    display: flex;
+}
+
+.btn-default.active,
+.btn-default:active {
+    color: white;
+    background-color: salmon;
+}
+
+/* ClassList & Map */
+
+.baby-option1,
+.baby-option2 {
+    margin-right: 20px;
+}
+
+/* Paginations */
+
+/* 헤민아 이거 안바꾸면 꿈에 동빈이가 나타나~!! */
+
+.page {
+    background: powderblue;
+    margin: 0.5em 0 0 0;
+}
+
+.paginations {
+    width: 200px;
+    justify-content: center;
+    margin-left: 43%;
+    margin-bottom: 2em;
+}
+
+/* SCHOOLS PICK */
+
+.section-schools-pick {
+    margin-left: 4.5em;
+}
+
+.section-schools-pick .fa-won-sign,
+.section-schools-pick .fa-calendar-alt {
+    /*  font-size: 1.1rem;*/
+}
+
+.section-schools-pick .picks-image:hover .fa-star {
+    color: #eded34;
+}
+
+.section-schools-pick .picks-box {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.section-schools-pick .picks-image {
+    width: 23.5%;
+    float: left;
+    margin-bottom: 15px;
+    justify-content: space-between;
+    background-image: url(../img/caurosel01.jpg);
+    background-size: cover;
+    height: 280px;
+    position: relative;
+}
+
+.section-schools-pick .picks-image:hover {
+    opacity: 0.7;
+}
+
+.section-schools-pick .image-caption {
+    position: absolute;
+    width: 100%;
+    padding: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    color: transparent;
+}
+
+.section-schools-pick .picks-image:hover .image-caption {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #000000;
+}
+
+.section-schools-pick .pick-category {
+    font-size: 0.8rem;
+    padding-bottom: 8px;
+}
+
+.section-schools-pick .pick-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-bottom: 8px;
+}
+
+.section-schools-pick .pick-price,
+.section-schools-pick .pick-date {
+    padding-bottom: 6px;
+}
+
+.section-schools-pick .pick-date,
+.section-schools-pick .pick-price,
+.section-schools-pick .pick-rate {
+    font-size: 0.8rem;
+}
+
+section {
+    position: static;
+}
+
+.scroll-fixed {
+    position: fixed;
+    top: 0%;
+    right: 6.1%;
+}
+
+.map {
+    left: 830px;
+    top: -4px;
+    width: 700px;
+    height: 515px;
+    padding: 30px 0px;
+    z-index: 2;
+}
+
+.mapbox {
+    margin-bottom: -520px;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #e84949;
+    padding: 45px;
+    font-size: 80%;
+}
+
+.footer-nav {
+    list-style: none;
+    float: left;
+}
+
+.social-links {
+    list-style: none;
+    float: right;
+}
+
+.footer-nav li,
+.social-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child {
+    margin-right: 0px;
+}
+
+.footer-nav>li>a:link,
+.footer-nav>li>a:visited,
+.social-links>li>a:link,
+.social-links>li>a:visited {
+    text-decoration: none;
+    border: 0;
+    color: #fff;
+    transition: color 0.2s;
+}
+
+.footer-nav>li>a:hover,
+.footer-nav>li>a:active {
+    color: #d91d1d;
+}
+
+.social-links>li>a:link,
+.social-links>li>a:visited {
+    font-size: 140%;
+    transition: color 0.2s;
+}
+
+.social-links .fa-facebook-square,
+.social-links .fa-twitter-square,
+.social-links .fa-google-plus-square,
+.social-links .fa-instagram {
+    transition: color 0.2s;
+    font-size: 1.6rem;
+}
+
+.social-links .fa-facebook-square:hover,
+.social-links .fa-twitter-square:hover,
+.social-links .fa-google-plus-square:hover,
+.social-links .fa-instagram:hover {
+    color: #d91d1d;
+}
+
+footer>div>p {
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 90%;
+}
