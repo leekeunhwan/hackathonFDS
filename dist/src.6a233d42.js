@@ -169,7 +169,7 @@ module.exports = reloadCSS;
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./img/caurosel01.jpg":30,"_css_loader":5}],14:[function(require,module,exports) {
+},{"./img/caurosel01.jpg":30,"_css_loader":5}],15:[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -198,7 +198,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '57157' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '62869' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -418,4 +418,4 @@ LazyPromise.prototype.catch = function (onError) {
 };
 },{"./bundle-url":6}],0:[function(require,module,exports) {
 var b=require(34);b.load([["caurosel01.f564e6dc.jpg",30]]);
-},{}]},{},[14,0], null)
+},{}]},{},[15,0], null)

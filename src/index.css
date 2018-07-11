@@ -1,4 +1,4 @@
-@charset 'utf-8';
+@charset "utf-8";
 /* BASIC SETUP  START COLOR : #eded34 */
 
 /* BASIC SETUP  PINK COLOR : #e84949 */
@@ -154,6 +154,17 @@ a {
 .btn-default:active {
   color: white;
   background-color: salmon;
+}
+
+/* CATEGORY */
+
+.category__baby,
+.category__class {
+  margin-top: 1.5em;
+}
+
+.category__find {
+  margin-top: 2rem;
 }
 
 /* SCHOOLS PICK */

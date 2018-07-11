@@ -1,3 +1,11 @@
 // 메인 페이지 자바스크립트
 
-// 정렬 기준 버튼 관련 로직
+// Category Sorting Logic
+let sortBaby = document.querySelector(".btn-group");
+
+$(".category__find").click(() => {
+  $(".sorting").hide();
+  if (sortBaby.querySelector("label").textContent == "출산전") {
+    $("baby-option1").show();
+  }
+});
