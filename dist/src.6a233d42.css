@@ -112,14 +112,6 @@ a {
   text-decoration: none;
 }
 
-.jumbotron {
-  background-image: url("https://kmong.com/img/main/desktop/bg_main_visual_01.png");
-  height: 50vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-  text-align: right;
-}
-
 .navigator {
   position: absolute;
   width: 100%;

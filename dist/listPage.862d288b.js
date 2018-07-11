@@ -103,73 +103,47 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   // Override the current require with this new one
   return newRequire;
-})({6:[function(require,module,exports) {
-var bundleURL = null;
-function getBundleURLCached() {
-  if (!bundleURL) {
-    bundleURL = getBundleURL();
-  }
+})({49:[function(require,module,exports) {
+var erase = document.querySelectorAll("label");
 
-  return bundleURL;
-}
+// article은 카테고리 변경하기를 눌러야 등장하므로 숨겨놓기
 
-function getBundleURL() {
-  // Attempt to find the URL of the current script and use that as the base URL
-  try {
-    throw new Error();
-  } catch (err) {
-    var matches = ('' + err.stack).match(/(https?|file|ftp):\/\/[^)\n]+/g);
-    if (matches) {
-      return getBaseURL(matches[0]);
-    }
-  }
+$("article").hide();
 
-  return '/';
-}
+// 카테고리 변경하기를 눌렀을때 기존 태그를 숨기고 article을 보여준다.
 
-function getBaseURL(url) {
-  return ('' + url).replace(/^((?:https?|file|ftp):\/\/.+)\/[^/]+$/, '$1') + '/';
-}
+$(".category__button").click(function () {
+  $("article").toggle();
+});
 
-exports.getBundleURL = getBundleURLCached;
-exports.getBaseURL = getBaseURL;
-},{}],5:[function(require,module,exports) {
-var bundle = require('./bundle-url');
+// 카테고리 창에서 지웠을 떄 - 전체 기능 구현 (X)
 
-function updateLink(link) {
-  var newLink = link.cloneNode();
-  newLink.onload = function () {
-    link.remove();
-  };
-  newLink.href = link.href.split('?')[0] + '?' + Date.now();
-  link.parentNode.insertBefore(newLink, link.nextSibling);
-}
+$(".delete1").click(function () {
+  $(".tag1").hide();
+});
 
-var cssTimeout = null;
-function reloadCSS() {
-  if (cssTimeout) {
-    return;
-  }
+$(".delete2").click(function () {
+  $(".tag2").hide();
+});
 
-  cssTimeout = setTimeout(function () {
-    var links = document.querySelectorAll('link[rel="stylesheet"]');
-    for (var i = 0; i < links.length; i++) {
-      if (bundle.getBaseURL(links[i].href) === bundle.getBundleURL()) {
-        updateLink(links[i]);
-      }
-    }
+$(".delete3").click(function () {
+  $(".tag3").hide();
+  $(".category1").hide();
+});
 
-    cssTimeout = null;
-  }, 50);
-}
+// 카테고리 변경하기를 눌렀다가 변경할 생각이 없어서 x를 누르면 다시 원상태로 보이게 하는 로직
 
-module.exports = reloadCSS;
-},{"./bundle-url":6}],17:[function(require,module,exports) {
+$(".delete").click(function () {
+  $("article").hide();
+  $(".tagging").show();
+});
 
-var reloadCSS = require('_css_loader');
-module.hot.dispose(reloadCSS);
-module.hot.accept(reloadCSS);
-},{"_css_loader":5}],18:[function(require,module,exports) {
+// 지우기 눌렀을때 초기화하는 것 && 시간나면 태그들어가는 것처럼 보이는 로직 짜기
+/* 
+
+
+*/
+},{}],18:[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -339,4 +313,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}]},{},[18], null)
+},{}]},{},[18,49], null)
+//# sourceMappingURL=/listPage.862d288b.map
