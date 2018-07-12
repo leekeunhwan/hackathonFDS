@@ -6,7 +6,7 @@ $("article").hide();
 
 // 카테고리 변경하기를 눌렀을때 기존 태그를 숨기고 article을 보여준다.
 
-$(".category__button").click(function() {
+$(".category-btn").click(function() {
   $("article").toggle();
 });
 

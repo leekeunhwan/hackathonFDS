@@ -3,609 +3,522 @@
 <html lang="ko">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
-    <link rel="stylesheet" href="/listPage.036d14bb.css">
-    <title>리스트 페이지</title>
-<script src="/listPage.036d14bb.js"></script></head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+	<link rel="stylesheet" href="/listPage.a2bc1cbc.css">
+	<title>리스트 페이지</title>
+<script src="/listPage.a2bc1cbc.js"></script></head>
 
 <body>
-    <!--임시 네비게이션-->
-    <nav>
-        <div class="navigator clearfix">
-            <a class="logo" href="/">이름은 정해지면 넣기</a>
-            <span class="navigator__right">
-                <a href="#">마이페이지</a>
-                <a href="/login.html">강의 등록</a>
-                <a onclick="logout()">로그아웃</a>
-            </span>
-        </div>
-    </nav>
+	<!--임시 네비게이션-->
+	<nav>
+		<div class="row">
+			<div class="navigator clearfix">
+				<a class="logo" href="/">이름은 정해지면 넣기</a>
+				<span class="navigator__right">
+					<a href="#">마이페이지</a>
+					<a href="/login.html">강의 등록</a>
+					<a onclick="logout()">로그아웃</a>
+				</span>
+			</div>
+		</div>
+	</nav>
 
-    <!--태그-->
-    <div class="field is-grouped is-grouped-multiline category__tag">
-        <div class="tagging">
-            <span class="category">개월수 : </span>
-            <div class="control tag1">
-                <div class="tags has-addons">
-                    <a class="tag is-link">출산전</a>
-                    <a class="tag is-delete delete1"></a>
-                </div>
-            </div>
-            <div class="control tag2">
-                <div class="tags has-addons">
-                    <a class="tag is-link">0~3개월</a>
-                    <a class="tag is-delete delete2"></a>
-                </div>
-            </div>
+	<!--태그-->
+	<div class="category-box clearfix">
+		<div class="full-row">
+			<div class="field is-grouped is-grouped-multiline">
+				<div class="tagging">
+					<span class="category">개월수 : </span>
+					<div class="control tag1">
+						<div class="tags has-addons">
+							<a class="tag is-link">출산전</a>
+							<a class="tag is-delete delete1"></a>
+						</div>
+					</div>
+					<div class="control tag2">
+						<div class="tags has-addons">
+							<a class="tag is-link">0~3개월</a>
+							<a class="tag is-delete delete2"></a>
+						</div>
+					</div>
+					<span class="category1">카테고리 : </span>
+					<div class="control tag3">
+						<div class="tags has-addons">
+							<a class="tag is-link">이유식</a>
+							<a class="tag is-delete delete3"></a>
+						</div>
+					</div>
+					<button type="button" class="button category-btn">카테고리 변경하기</button>
+					<div class="dropdown is-right">
+						<button class="button dropdown-toggle btn-sort" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+							가까운 거리순
+							<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu dropdown-menu-left" role="menu" aria-labelledby="dropdownMenu1">
+							<li role="presentation">
+								<a role="menuitem" tabindex="-1" href="#">가까운 거리순</a>
+							</li>
+							<li role="presentation">
+								<hr class="dropdown-divider">
+							</li>
+							<li role="presentation">
+								<a role="menuitem" tabindex="-1" href="#">낮은 가격순</a>
+							</li>
+							<li role="presentation">
+								<a role="menuitem" tabindex="-1" href="#">최근 등록순</a>
+							</li>
+							<li role="presentation">
+								<a role="menuitem" tabindex="-1" href="#">높은 평점순</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<article class="message is-info">
+				<div class="message-header">
+					<p>카테고리 변경</p>
+				</div>
+				<div class="message-body">
+					<div class="baby__select">
+						<button class="delete right" aria-label="delete"></button>
+						<h3 class="category__baby">아기 개월 수</h3>
+					</div>
+					<div class="btn-group baby__select" data-toggle="buttons">
+						<label class="btn btn-default baby__option1">출산전</label>
+						<label class="btn btn-default baby__option2">0~3개월</label>
+						<label class="btn btn-default baby__option3">4~6개월</label>
+						<label class="btn btn-default baby__option4">7~12개월</label>
+						<label class="btn btn-default baby__option5">13~24개월</label>
+					</div>
+					<div class="category__select">
+						<h3 class="category__class">카테고리</h3>
+					</div>
+					<div class="btn-group" data-toggle="buttons">
+						<label class="btn btn-default">이유식</label>
+						<label class="btn btn-default">옷</label>
+						<label class="btn btn-default">생활용품</label>
+						<label class="btn btn-default">장난감</label>
+						<label class="btn btn-default">육아교육</label>
+						<label class="btn btn-default">산모건강</label>
+					</div>
+					<p class="category__selectButton">
+						<button type="button" class="button category__button erase">지우기</button>
+						<button type="button" class="button category__button">적용</button>
+					</p>
+				</div>
+			</article>
+		</div>
+	</div>
 
-            <span class="category1">카테고리 : </span>
-            <div class="control tag3">
-                <div class="tags has-addons">
-                    <a class="tag is-link">이유식</a>
-                    <a class="tag is-delete delete3"></a>
-                </div>
-            </div>
-            <button type="button" class="btn btn-default btn-sm category__button">카테고리 변경하기</button>
-            <div class="dropdown">
-                <button class="btn btn-default btn-sm dropdown-toggle sorting__button" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
-                    보기 순서
-                    <span class="caret"></span>
-                </button>
-                <ul class="dropdown-menu dropdown-menu-left" role="menu" aria-labelledby="dropdownMenu1">
-                    <li role="presentation">
-                        <a role="menuitem" tabindex="-1" href="#">거리순</a>
-                    </li>
-                    <li role="presentation">
-                        <a role="menuitem" tabindex="-1" href="#">낮은 가격순</a>
-                    </li>
-                    <li role="presentation">
-                        <a role="menuitem" tabindex="-1" href="#">최근 등록순</a>
-                    </li>
-                    <li role="presentation">
-                        <a role="menuitem" tabindex="-1" href="#">높은 평점순</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+	<!--  -->
+	<div class="detail-box clearfix">
+		<div class="full-row">
+			<div class="col-sm-7">
+				<section class="section-schools-pick">
+					<div class="picks-image span-1-of-2 col baby-option2">
+						<div class="image-caption">
+							<p class="pick-category">이유식</p>
+							<p class="pick-title">냠냠 브로컬리 이유식</p>
+							<p class="pick-date">
+								<i class="far fa-calendar-alt"></i> 월, 수, 금 AM 10:00 ~ PM 12:00</p>
+							<p class="pick-price">
+								<i class="fas fa-won-sign"></i> 50,000</p>
+							<p class="pick-rate">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i> (20)</p>
+						</div>
+					</div>
+					<div class="picks-image span-1-of-2 col baby-option2">
+						<div class="image-caption">
+							<p class="pick-category">이유식</p>
+							<p class="pick-title">냠냠 브로컬리 이유식</p>
+							<p class="pick-date">
+								<i class="far fa-calendar-alt"></i> 월, 수, 금 AM 10:00 ~ PM 12:00</p>
+							<p class="pick-price">
+								<i class="fas fa-won-sign"></i> 50,000</p>
+							<p class="pick-rate">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i> (20)</p>
+						</div>
+					</div>
+					<div class="picks-image span-1-of-2 col baby-option2">
+						<div class="image-caption">
+							<p class="pick-category">이유식</p>
+							<p class="pick-title">냠냠 브로컬리 이유식</p>
+							<p class="pick-date">
+								<i class="far fa-calendar-alt"></i> 월, 수, 금 AM 10:00 ~ PM 12:00</p>
+							<p class="pick-price">
+								<i class="fas fa-won-sign"></i> 50,000</p>
+							<p class="pick-rate">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i> (20)</p>
+						</div>
+					</div>
+					<div class="picks-image span-1-of-2 col baby-option2">
+						<div class="image-caption">
+							<p class="pick-category">이유식</p>
+							<p class="pick-title">냠냠 브로컬리 이유식</p>
+							<p class="pick-date">
+								<i class="far fa-calendar-alt"></i> 월, 수, 금 AM 10:00 ~ PM 12:00</p>
+							<p class="pick-price">
+								<i class="fas fa-won-sign"></i> 50,000</p>
+							<p class="pick-rate">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i> (20)</p>
+						</div>
+					</div>
+					<div class="picks-image span-1-of-2 col baby-option2">
+						<div class="image-caption">
+							<p class="pick-category">이유식</p>
+							<p class="pick-title">냠냠 브로컬리 이유식</p>
+							<p class="pick-date">
+								<i class="far fa-calendar-alt"></i> 월, 수, 금 AM 10:00 ~ PM 12:00</p>
+							<p class="pick-price">
+								<i class="fas fa-won-sign"></i> 50,000</p>
+							<p class="pick-rate">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i> (20)</p>
+						</div>
+					</div>
+					<div class="picks-image span-1-of-2 col baby-option2">
+						<div class="image-caption">
+							<p class="pick-category">이유식</p>
+							<p class="pick-title">냠냠 브로컬리 이유식</p>
+							<p class="pick-date">
+								<i class="far fa-calendar-alt"></i> 월, 수, 금 AM 10:00 ~ PM 12:00</p>
+							<p class="pick-price">
+								<i class="fas fa-won-sign"></i> 50,000</p>
+							<p class="pick-rate">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i> (20)</p>
+						</div>
+					</div>
+					<div class="picks-image span-1-of-2 col baby-option2">
+						<div class="image-caption">
+							<p class="pick-category">이유식</p>
+							<p class="pick-title">냠냠 브로컬리 이유식</p>
+							<p class="pick-date">
+								<i class="far fa-calendar-alt"></i> 월, 수, 금 AM 10:00 ~ PM 12:00</p>
+							<p class="pick-price">
+								<i class="fas fa-won-sign"></i> 50,000</p>
+							<p class="pick-rate">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i> (20)</p>
+						</div>
+					</div>
+					<div class="picks-image span-1-of-2 col baby-option2">
+						<div class="image-caption">
+							<p class="pick-category">이유식</p>
+							<p class="pick-title">냠냠 브로컬리 이유식</p>
+							<p class="pick-date">
+								<i class="far fa-calendar-alt"></i> 월, 수, 금 AM 10:00 ~ PM 12:00</p>
+							<p class="pick-price">
+								<i class="fas fa-won-sign"></i> 50,000</p>
+							<p class="pick-rate">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i> (20)</p>
+						</div>
+					</div>
+					<div class="picks-image span-1-of-2 col baby-option2">
+						<div class="image-caption">
+							<p class="pick-category">이유식</p>
+							<p class="pick-title">냠냠 브로컬리 이유식</p>
+							<p class="pick-date">
+								<i class="far fa-calendar-alt"></i> 월, 수, 금 AM 10:00 ~ PM 12:00</p>
+							<p class="pick-price">
+								<i class="fas fa-won-sign"></i> 50,000</p>
+							<p class="pick-rate">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i> (20)</p>
+						</div>
+					</div>
+					<div class="picks-image span-1-of-2 col baby-option2">
+						<div class="image-caption">
+							<p class="pick-category">이유식</p>
+							<p class="pick-title">냠냠 브로컬리 이유식</p>
+							<p class="pick-date">
+								<i class="far fa-calendar-alt"></i> 월, 수, 금 AM 10:00 ~ PM 12:00</p>
+							<p class="pick-price">
+								<i class="fas fa-won-sign"></i> 50,000</p>
+							<p class="pick-rate">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i> (20)</p>
+						</div>
+					</div>
+				</section>
+			</div>
+			<div class="col-sm-5">
+				<section class="map-box clearfix">
+					<div class="picks-box" id="mapbox">
+						<div class="mapPadding">
+							<div id="map" class="map"></div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+	</div>
 
-        <article class="message is-info">
-            <div class="message-header">
-                <p>카테고리 변경</p>
-            </div>
-            <div class="message-body">
-                <div class="baby__select">
-                    <button class="delete right" aria-label="delete"></button>
-                    <h3 class="category__baby">아기 개월 수</h3>
-                </div>
-                <div class="btn-group baby__select" data-toggle="buttons">
-                    <label class="btn btn-default baby__option1">출산전</label>
-                    <label class="btn btn-default baby__option2">0~3개월</label>
-                    <label class="btn btn-default baby__option3">4~6개월</label>
-                    <label class="btn btn-default baby__option4">7~12개월</label>
-                    <label class="btn btn-default baby__option5">13~24개월</label>
-                </div>
+	<!--페이지네이션 (기능 X)-->
+	<section class="pagination-box">
+		<nav class="paginations">
+			<ul class="pagination">
+				<li>
+					<a href="#" aria-label="Previous">
+						<span aria-hidden="true">&laquo;</span>
+					</a>
+				</li>
+				<li class="active">
+					<a href="#">1</a>
+				</li>
+				<li>
+					<a href="#">2</a>
+				</li>
+				<li>
+					<a href="#">3</a>
+				</li>
+				<li>
+					<a href="#">4</a>
+				</li>
+				<li>
+					<a href="#">5</a>
+				</li>
+				<li>
+					<a href="#" aria-label="Next">
+						<span aria-hidden="true">&raquo;</span>
+					</a>
+				</li>
+			</ul>
+		</nav>
+	</section>
 
-                <div class="category__select">
-                    <h3 class="category__class">카테고리</h3>
-                </div>
-                <div class="btn-group" data-toggle="buttons">
-                    <label class="btn btn-default">이유식</label>
-                    <label class="btn btn-default">옷</label>
-                    <label class="btn btn-default">생활용품</label>
-                    <label class="btn btn-default">장난감</label>
-                    <label class="btn btn-default">육아교육</label>
-                    <label class="btn btn-default">산모건강</label>
-                </div>
-                <p class="category__selectButton">
-                    <button type="button" class="btn btn-default btn-sm category__button erase">지우기</button>
-                    <button type="button" class="btn btn-default btn-sm category__button">적용</button>
-                </p>
-            </div>
-        </article>
-    </div>
+	<footer>
+		<div class="row">
+			<div class="span-1-of-2 col">
+				<ul class="footer-nav">
+					<li>
+						<a href="#">About us</a>
+					</li>
+					<li>
+						<a href="#">Blog</a>
+					</li>
+					<li>
+						<a href="#">Press</a>
+					</li>
+					<li>
+						<a href="#">IOS App</a>
+					</li>
+					<li>
+						<a href="#">Android App</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col span-1-of-2">
+				<ul class="social-links">
+					<li>
+						<a href="#">
+							<i class="fab fa-facebook-square"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="fab fa-twitter-square"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="fab fa-google-plus-square"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="fab fa-instagram"></i>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="row">
+			<p>
+				copyright &copy; 2018 by Beigenut. All rights reserved.
+			</p>
+		</div>
+	</footer>
+	<div class="content"></div>
+	<script defer="" src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?clientId=B19QqabZeYWiHDVnqWuy&submodules=geocoder"></script>
+	<script src="/listPage.21de04b0.js"></script>
 
+	<script>
+		var position = new naver.maps.LatLng(37.5157395, 127.0214289999999);
+		var map = new naver.maps.Map('map', {
+			center: position,
+			zoom: 11,
+			scaleControl: false,
+			logoControl: false,
+			mapDataControl: false,
+			zoomControl: true,
+			minZoom: 1,
+			mapTypeId: naver.maps.MapTypeId.NORMAL
+		});
 
-    <section class="section-schools-pick">
+		$(window).on("load ", function () {
+			if (navigator.geolocation) {
+				navigator.geolocation.getCurrentPosition(onSuccessGeolocation,
+					onErrorGeolocation);
+			} else {
+				var center = map.getCenter();
+				infowindow.setContent(
+					'<div style="padding:20px;"><h5 style="margin-bottom:5px;color:#f00;"> Geolocation not supported </h5>' +
+					"latitude: " + center.lat() + "<br /> longitude: " + center.lng() + '</div>');
+				infowindow.open(map, center);
+			}
+		});
 
-        <div class="full-row clearfix picks-box mapbox">
-            <div class="mapBox">
-                <div class="mapPadding">
-                    <div id="map" class="map"></div>
-                </div>
-            </div>
-        </div>
-        <div class="full-row clearfix picks-box">
-            <div class="picks-image span-1-of-3 col baby-option2">
-                <div class="image-caption">
-                    <p class="pick-category">이유식</p>
-                    <p class="pick-title">냠냠 브로컬리 이유식</p>
-                    <p class="pick-date">
-                        <i class="far fa-calendar-alt"></i> 월, 수, 금 AM 10:00 ~ PM 12:00</p>
-                    <p class="pick-price">
-                        <i class="fas fa-won-sign"></i> 50,000</p>
-                    <p class="pick-rate">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i> (20)</p>
-                </div>
-            </div>
+		// 지도 마커 - 내일 지도 마커 호버하면 정보뜨는 것 하기
+		var marker = new naver.maps.Marker({
+			position: new naver.maps.LatLng(37.515992, 127.028997),
+			map: map
+		});
+		var marker = new naver.maps.Marker({
+			position: new naver.maps.LatLng(37.515992, 127.027789),
+			map: map
+		});
 
-            <div class="picks-image span-1-of-3 col baby-option2">
-                <div class="image-caption">
-                    <p class="pick-category">이유식</p>
-                    <p class="pick-title">냠냠 브로컬리 이유식</p>
-                    <p class="pick-date">
-                        <i class="far fa-calendar-alt"></i> 월, 수, 금 AM 10:00 ~ PM 12:00</p>
-                    <p class="pick-price">
-                        <i class="fas fa-won-sign"></i> 50,000</p>
-                    <p class="pick-rate">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i> (20)</p>
-                </div>
-            </div>
-        </div>
+		var marker = new naver.maps.Marker({
+			position: new naver.maps.LatLng(37.515992, 127.023845),
+			map: map
+		});
 
-        <div class="full-row clearfix picks-box box3">
-            <div class="picks-image span-1-of-3 col baby-option2">
-                <div class="image-caption">
-                    <p class="pick-category">이유식</p>
-                    <p class="pick-title">냠냠 브로컬리 이유식</p>
-                    <p class="pick-date">
-                        <i class="far fa-calendar-alt"></i> 월, 수, 금 AM 10:00 ~ PM 12:00</p>
-                    <p class="pick-price">
-                        <i class="fas fa-won-sign"></i> 50,000</p>
-                    <p class="pick-rate">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i> (20)</p>
-                </div>
-            </div>
+		var marker = new naver.maps.Marker({
+			position: new naver.maps.LatLng(37.516992, 127.025545),
+			map: map
+		});
 
-            <div class="picks-image span-1-of-3 col baby-option2">
-                <div class="image-caption">
-                    <p class="pick-category">이유식</p>
-                    <p class="pick-title">냠냠 브로컬리 이유식</p>
-                    <p class="pick-date">
-                        <i class="far fa-calendar-alt"></i> 월, 수, 금 AM 10:00 ~ PM 12:00</p>
-                    <p class="pick-price">
-                        <i class="fas fa-won-sign"></i> 50,000</p>
-                    <p class="pick-rate">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i> (20)</p>
-                </div>
-            </div>
-        </div>
-        <div class="full-row clearfix picks-box box4">
-            <div class="picks-image span-1-of-3 col baby-option2">
-                <div class="image-caption">
-                    <p class="pick-category">이유식</p>
-                    <p class="pick-title">냠냠 브로컬리 이유식</p>
-                    <p class="pick-date">
-                        <i class="far fa-calendar-alt"></i> 월, 수, 금 AM 10:00 ~ PM 12:00</p>
-                    <p class="pick-price">
-                        <i class="fas fa-won-sign"></i> 50,000</p>
-                    <p class="pick-rate">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i> (20)</p>
-                </div>
-            </div>
+		var marker = new naver.maps.Marker({
+			position: new naver.maps.LatLng(37.514992, 127.023314),
+			map: map
+		});
+		var marker = new naver.maps.Marker({
+			position: new naver.maps.LatLng(37.514992, 127.028814),
+			map: map
+		});
+		var marker = new naver.maps.Marker({
+			position: new naver.maps.LatLng(37.514992, 127.018914),
+			map: map
+		});
+		var marker = new naver.maps.Marker({
+			position: new naver.maps.LatLng(37.514992, 127.019014),
+			map: map
+		});
 
-            <div class="picks-image span-1-of-3 col baby-option2">
-                <div class="image-caption">
-                    <p class="pick-category">이유식</p>
-                    <p class="pick-title">냠냠 브로컬리 이유식</p>
-                    <p class="pick-date">
-                        <i class="far fa-calendar-alt"></i> 월, 수, 금 AM 10:00 ~ PM 12:00</p>
-                    <p class="pick-price">
-                        <i class="fas fa-won-sign"></i> 50,000</p>
-                    <p class="pick-rate">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i> (20)</p>
-                </div>
-            </div>
-        </div>
-        <div class="full-row clearfix picks-box box5">
-            <div class="picks-image span-1-of-3 col baby-option2">
-                <div class="image-caption">
-                    <p class="pick-category">이유식</p>
-                    <p class="pick-title">냠냠 브로컬리 이유식</p>
-                    <p class="pick-date">
-                        <i class="far fa-calendar-alt"></i> 월, 수, 금 AM 10:00 ~ PM 12:00</p>
-                    <p class="pick-price">
-                        <i class="fas fa-won-sign"></i> 50,000</p>
-                    <p class="pick-rate">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i> (20)</p>
-                </div>
-            </div>
+		var marker = new naver.maps.Marker({
+			position: new naver.maps.LatLng(37.514992, 127.021014),
+			map: map
+		});
+		var marker = new naver.maps.Marker({
+			position: new naver.maps.LatLng(37.514992, 127.022014),
+			map: map
+		});
+		var marker = new naver.maps.Marker({
+			position: new naver.maps.LatLng(37.515992, 127.023014),
+			map: map
+		});
+		var marker = new naver.maps.Marker({
+			position: new naver.maps.LatLng(37.516992, 127.024014),
+			map: map
+		});
+		var marker = new naver.maps.Marker({
+			position: new naver.maps.LatLng(37.517992, 127.025014),
+			map: map
+		});
+		var marker = new naver.maps.Marker({
+			position: new naver.maps.LatLng(37.514992, 127.019014),
+			map: map
+		});
 
-            <div class="picks-image span-1-of-3 col baby-option2">
-                <div class="image-caption">
-                    <p class="pick-category">이유식</p>
-                    <p class="pick-title">냠냠 브로컬리 이유식</p>
-                    <p class="pick-date">
-                        <i class="far fa-calendar-alt"></i> 월, 수, 금 AM 10:00 ~ PM 12:00</p>
-                    <p class="pick-price">
-                        <i class="fas fa-won-sign"></i> 50,000</p>
-                    <p class="pick-rate">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i> (20)</p>
-                </div>
-            </div>
-        </div>
-        <div class="full-row clearfix picks-box box6">
-            <div class="picks-image span-1-of-3 col baby-option2">
-                <div class="image-caption">
-                    <p class="pick-category">이유식</p>
-                    <p class="pick-title">냠냠 브로컬리 이유식</p>
-                    <p class="pick-date">
-                        <i class="far fa-calendar-alt"></i> 월, 수, 금 AM 10:00 ~ PM 12:00</p>
-                    <p class="pick-price">
-                        <i class="fas fa-won-sign"></i> 50,000</p>
-                    <p class="pick-rate">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i> (20)</p>
-                </div>
-            </div>
+		var infowindow = new naver.maps.InfoWindow();
 
-            <div class="picks-image span-1-of-3 col baby-option2">
-                <div class="image-caption">
-                    <p class="pick-category">이유식</p>
-                    <p class="pick-title">냠냠 브로컬리 이유식</p>
-                    <p class="pick-date">
-                        <i class="far fa-calendar-alt"></i> 월, 수, 금 AM 10:00 ~ PM 12:00</p>
-                    <p class="pick-price">
-                        <i class="fas fa-won-sign"></i> 50,000</p>
-                    <p class="pick-rate">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i> (20)</p>
-                </div>
-            </div>
-        </div>
-        <div class="full-row clearfix picks-box box7">
-            <div class="picks-image span-1-of-3 col baby-option2">
-                <div class="image-caption">
-                    <p class="pick-category">이유식</p>
-                    <p class="pick-title">냠냠 브로컬리 이유식</p>
-                    <p class="pick-date">
-                        <i class="far fa-calendar-alt"></i> 월, 수, 금 AM 10:00 ~ PM 12:00</p>
-                    <p class="pick-price">
-                        <i class="fas fa-won-sign"></i> 50,000</p>
-                    <p class="pick-rate">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i> (20)</p>
-                </div>
-            </div>
+		function onSuccessGeolocation(position) {
+			var location = new naver.maps.LatLng(position.coords.latitude,
+				position.coords.longitude);
+			map.setCenter(location); // 얻은 좌표를 지도의 중심으로 설정합니다. 
+			map.setZoom(11); // 지도의 줌 레벨을 변경합니다. 
+			infowindow.setContent('<div style = "padding:5px;">' +
+				'현재 위치입니다.' +
+				'</div>');
+			infowindow.open(map, location);
+		}
 
-            <div class="picks-image span-1-of-3 col baby-option2">
-                <div class="image-caption">
-                    <p class="pick-category">이유식</p>
-                    <p class="pick-title">냠냠 브로컬리 이유식</p>
-                    <p class="pick-date">
-                        <i class="far fa-calendar-alt"></i> 월, 수, 금 AM 10:00 ~ PM 12:00</p>
-                    <p class="pick-price">
-                        <i class="fas fa-won-sign"></i> 50,000</p>
-                    <p class="pick-rate">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i> (20)</p>
-                </div>
-            </div>
-        </div>
-        <div class="full-row clearfix picks-box box8">
-            <div class="picks-image span-1-of-3 col baby-option2">
-                <div class="image-caption">
-                    <p class="pick-category">이유식</p>
-                    <p class="pick-title">냠냠 브로컬리 이유식</p>
-                    <p class="pick-date">
-                        <i class="far fa-calendar-alt"></i> 월, 수, 금 AM 10:00 ~ PM 12:00</p>
-                    <p class="pick-price">
-                        <i class="fas fa-won-sign"></i> 50,000</p>
-                    <p class="pick-rate">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i> (20)</p>
-                </div>
-            </div>
+		function onErrorGeolocation() {
+			var center = map.getCenter();
+			infowindow.setContent('<div style = "padding:20px;" > ' +
+				' <h5 style = "margin-bottom:5px;color:#f00;" > Geolocation failed! </h5>' + "latitude: " + center.lat() +
+				" <br / > longitude: " + center.lng() + '</div>');
+			infowindow.open(map, center);
+		}
 
-            <div class="picks-image span-1-of-3 col baby-option2">
-                <div class="image-caption">
-                    <p class="pick-category">이유식</p>
-                    <p class="pick-title">냠냠 브로컬리 이유식</p>
-                    <p class="pick-date">
-                        <i class="far fa-calendar-alt"></i> 월, 수, 금 AM 10:00 ~ PM 12:00</p>
-                    <p class="pick-price">
-                        <i class="fas fa-won-sign"></i> 50,000</p>
-                    <p class="pick-rate">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i> (20)</p>
-                </div>
-            </div>
-        </div>
+		// 스크롤링 구현
+		window.onscroll = function () {
+			myFunction();
+		};
+		var mapbox = document.getElementById("mapbox");
+		var sticky = navbar.offsetTop;
 
-    </section>
+		function myFunction() {
+			if (window.pageYOffset >= 220) {
+				mapbox.classList.add("sticky-map");
+			} else {
+				mapbox.classList.remove("sticky-map");
+			}
+		}
 
-
-
-
-    <!--페이지네이션 (기능 X)-->
-    <div class="page">
-        <nav class="paginations">
-            <ul class="pagination">
-                <li>
-                    <a href="#" aria-label="Previous">
-                        <span aria-hidden="true">&laquo;</span>
-                    </a>
-                </li>
-                <li class="active">
-                    <a href="#">1</a>
-                </li>
-                <li>
-                    <a href="#">2</a>
-                </li>
-                <li>
-                    <a href="#">3</a>
-                </li>
-                <li>
-                    <a href="#">4</a>
-                </li>
-                <li>
-                    <a href="#">5</a>
-                </li>
-                <li>
-                    <a href="#" aria-label="Next">
-                        <span aria-hidden="true">&raquo;</span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </div>
-
-    <!--푸터-->
-    <footer>
-        <div class="row">
-            <div class="span-1-of-2 col">
-                <ul class="footer-nav">
-                    <li>
-                        <a href="#">About us</a>
-                    </li>
-                    <li>
-                        <a href="#">Blog</a>
-                    </li>
-                    <li>
-                        <a href="#">Press</a>
-                    </li>
-                    <li>
-                        <a href="#">IOS App</a>
-                    </li>
-                    <li>
-                        <a href="#">Android App</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col span-1-of-2">
-                <ul class="social-links">
-                    <li>
-                        <a href="#">
-                            <i class="fab fa-facebook-square"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fab fa-twitter-square"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fab fa-google-plus-square"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="row">
-            <p>
-                copyright &copy; 2018 by Beigenut. All rights reserved.
-            </p>
-        </div>
-    </footer>
-    <div class="content"></div>
-    <script defer="" src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?clientId=B19QqabZeYWiHDVnqWuy&submodules=geocoder"></script>
-
-
-    <script src="/listPage.862d288b.js"></script>
-    <script>
-        var position = new naver.maps.LatLng(37.5157395, 127.0214289999999);
-
-        var map = new naver.maps.Map('map', {
-            center: position,
-            zoom: 11,
-            scaleControl: false,
-            logoControl: false,
-            mapDataControl: false,
-            zoomControl: true,
-            minZoom: 1,
-            mapTypeId: naver.maps.MapTypeId.NORMAL
-        });
-
-
-        $(window).on("load ", function () {
-            if (navigator.geolocation) {
-                navigator.geolocation.getCurrentPosition(onSuccessGeolocation,
-                    onErrorGeolocation);
-            } else {
-                var center = map.getCenter();
-                infowindow.setContent(
-                    '<div style="padding:20px;"><h5 style="margin-bottom:5px;color:#f00;"> Geolocation not supported </h5>' +
-                    "latitude: " + center.lat() + "<br /> longitude: " + center.lng() + '</div>');
-                infowindow.open(map, center);
-            }
-        });
-
-        // 지도 마커 - 내일 지도 마커 호버하면 정보뜨는 것 하기
-
-        var marker = new naver.maps.Marker({
-            position: new naver.maps.LatLng(37.515992, 127.028997),
-            map: map
-        });
-        var marker = new naver.maps.Marker({
-            position: new naver.maps.LatLng(37.515992, 127.027789),
-            map: map
-        });
-
-        var marker = new naver.maps.Marker({
-            position: new naver.maps.LatLng(37.515992, 127.023845),
-            map: map
-        });
-
-        var marker = new naver.maps.Marker({
-            position: new naver.maps.LatLng(37.516992, 127.025545),
-            map: map
-        });
-
-        var marker = new naver.maps.Marker({
-            position: new naver.maps.LatLng(37.514992, 127.023314),
-            map: map
-        });
-        var marker = new naver.maps.Marker({
-            position: new naver.maps.LatLng(37.514992, 127.028814),
-            map: map
-        });
-        var marker = new naver.maps.Marker({
-            position: new naver.maps.LatLng(37.514992, 127.018914),
-            map: map
-        });
-        var marker = new naver.maps.Marker({
-            position: new naver.maps.LatLng(37.514992, 127.019014),
-            map: map
-        });
-
-        var marker = new naver.maps.Marker({
-            position: new naver.maps.LatLng(37.514992, 127.021014),
-            map: map
-        });
-        var marker = new naver.maps.Marker({
-            position: new naver.maps.LatLng(37.514992, 127.022014),
-            map: map
-        });
-        var marker = new naver.maps.Marker({
-            position: new naver.maps.LatLng(37.515992, 127.023014),
-            map: map
-        });
-        var marker = new naver.maps.Marker({
-            position: new naver.maps.LatLng(37.516992, 127.024014),
-            map: map
-        });
-        var marker = new naver.maps.Marker({
-            position: new naver.maps.LatLng(37.517992, 127.025014),
-            map: map
-        });
-        var marker = new naver.maps.Marker({
-            position: new naver.maps.LatLng(37.514992, 127.019014),
-            map: map
-        });
-
-        var infowindow = new naver.maps.InfoWindow();
-
-        function onSuccessGeolocation(position) {
-            var location = new naver.maps.LatLng(position.coords.latitude,
-                position.coords.longitude);
-            map.setCenter(location); // 얻은 좌표를 지도의 중심으로 설정합니다. 
-            map.setZoom(11); // 지도의 줌 레벨을 변경합니다. 
-            infowindow.setContent('<div style = "padding:5px;">' +
-                '현재 위치입니다.' +
-                '</div>');
-            infowindow.open(map, location);
-        }
-
-        function onErrorGeolocation() {
-            var center = map.getCenter();
-            infowindow.setContent('<div style = "padding:20px;" > ' +
-                ' <h5 style = "margin-bottom:5px;color:#f00;" > Geolocation failed! </h5>' + "latitude: " + center.lat() +
-                " <br / > longitude: " + center.lng() + '</div>');
-            infowindow.open(map, center);
-        }
-
-
-
-        // 스크롤링 기능 구현
-        $(function () {
-            $(document).ready(function () {
-                var scrollOffset = $('.mapBox').offset();
-                $(window).scroll(function () {
-                    if ($(document).scrollTop() > scrollOffset.top - (scrollOffset.top * 0.05)) {
-                        $('.mapBox').addClass('scroll-fixed');
-                        $('.mapbox').css('margin-bottom', 0);
-                        $('.map').css('left', '2.8%')
-                    } else {
-                        $('.mapBox').removeClass('scroll-fixed');
-                        $('.mapbox').css('margin-bottom', '-32%');
-                        $('.map').css('left', '118%').css('top', '-3%');
-                    }
-                });
-            });
-        });
-
-        // 로그 아웃 로직
-        function logout() {
-            swal({
-                icon: "success",
-                title: "로그아웃이 완료되었습니다."
-            }).then(value => {
-                window.location.replace("/");
-            });
-        }
-    </script>
+		// 로그 아웃 로직
+		function logout() {
+			swal({
+				icon: "success",
+				title: "로그아웃이 완료되었습니다."
+			}).then(value => {
+				window.location.replace("/");
+			});
+		}
+	</script>
 </body></html>

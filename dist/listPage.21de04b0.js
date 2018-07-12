@@ -103,7 +103,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   // Override the current require with this new one
   return newRequire;
-})({72:[function(require,module,exports) {
+})({57:[function(require,module,exports) {
 var erase = document.querySelectorAll("label");
 
 // article은 카테고리 변경하기를 눌러야 등장하므로 숨겨놓기
@@ -112,7 +112,7 @@ $("article").hide();
 
 // 카테고리 변경하기를 눌렀을때 기존 태그를 숨기고 article을 보여준다.
 
-$(".category__button").click(function () {
+$(".category-btn").click(function () {
   $("article").toggle();
 });
 
@@ -143,7 +143,7 @@ $(".delete").click(function () {
 
 
 */
-},{}],101:[function(require,module,exports) {
+},{}],74:[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -172,7 +172,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '8792' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '10931' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -313,5 +313,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}]},{},[101,72], null)
+},{}]},{},[74,57], null)
 //# sourceMappingURL=/listPage.21de04b0.map
