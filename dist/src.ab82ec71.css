@@ -913,3 +913,34 @@ footer>div>p {
   width: 200px;
   height: 45px;
 }
+
+.class-image02 {
+  background-position: 0 -50px;
+}
+
+/* detailpage-nav */
+
+.detailpage-nav a {
+  text-decoration: none;
+}
+
+.detailpage-nav .navigator {
+  position: relative;
+  width: 100%;
+  text-align: right;
+  top: 1.5vh;
+  height: 50px;
+}
+
+.detailpage-nav .navigator a {
+  color: salmon;
+  font-weight: bold;
+}
+
+.detailpage-nav .navigator .logo {
+  float: left;
+}
+
+.detailpage-nav .navigator__right a {
+  margin: 0 10px;
+}
