@@ -164,12 +164,12 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":99}],19:[function(require,module,exports) {
+},{"./bundle-url":99}],56:[function(require,module,exports) {
 
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./img\\caurosel01.jpg":26,"_css_loader":97}],74:[function(require,module,exports) {
+},{"./..\\img\\caurosel01.jpg":26,"_css_loader":97}],74:[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 

@@ -103,7 +103,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   // Override the current require with this new one
   return newRequire;
-})({33:[function(require,module,exports) {
+})({64:[function(require,module,exports) {
 window.onscroll = function () {
   myFunction();
 };
@@ -124,7 +124,7 @@ function myFunction() {
     mapbox.classList.remove("sticky-map");
   }
 }
-},{}],47:[function(require,module,exports) {
+},{}],74:[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -153,7 +153,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '7996' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '10931' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -294,5 +294,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}]},{},[47,33], null)
+},{}]},{},[74,64], null)
 //# sourceMappingURL=/detailPage.5c8fa464.map

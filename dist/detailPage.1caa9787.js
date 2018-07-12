@@ -124,7 +124,7 @@ function myFunction() {
     mapbox.classList.remove("sticky-map");
   }
 }
-},{}],15:[function(require,module,exports) {
+},{}],33:[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -153,7 +153,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '50489' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '49682' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -294,5 +294,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}]},{},[15,61], null)
+},{}]},{},[33,61], null)
 //# sourceMappingURL=/detailPage.1caa9787.map

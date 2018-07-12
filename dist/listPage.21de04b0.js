@@ -103,73 +103,47 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   // Override the current require with this new one
   return newRequire;
-})({99:[function(require,module,exports) {
-var bundleURL = null;
-function getBundleURLCached() {
-  if (!bundleURL) {
-    bundleURL = getBundleURL();
-  }
+})({57:[function(require,module,exports) {
+var erase = document.querySelectorAll("label");
 
-  return bundleURL;
-}
+// article은 카테고리 변경하기를 눌러야 등장하므로 숨겨놓기
 
-function getBundleURL() {
-  // Attempt to find the URL of the current script and use that as the base URL
-  try {
-    throw new Error();
-  } catch (err) {
-    var matches = ('' + err.stack).match(/(https?|file|ftp):\/\/[^)\n]+/g);
-    if (matches) {
-      return getBaseURL(matches[0]);
-    }
-  }
+$("article").hide();
 
-  return '/';
-}
+// 카테고리 변경하기를 눌렀을때 기존 태그를 숨기고 article을 보여준다.
 
-function getBaseURL(url) {
-  return ('' + url).replace(/^((?:https?|file|ftp):\/\/.+)\/[^/]+$/, '$1') + '/';
-}
+$(".category-btn").click(function () {
+  $("article").toggle();
+});
 
-exports.getBundleURL = getBundleURLCached;
-exports.getBaseURL = getBaseURL;
-},{}],97:[function(require,module,exports) {
-var bundle = require('./bundle-url');
+// 카테고리 창에서 지웠을 떄 - 전체 기능 구현 (X)
 
-function updateLink(link) {
-  var newLink = link.cloneNode();
-  newLink.onload = function () {
-    link.remove();
-  };
-  newLink.href = link.href.split('?')[0] + '?' + Date.now();
-  link.parentNode.insertBefore(newLink, link.nextSibling);
-}
+$(".delete1").click(function () {
+  $(".tag1").hide();
+});
 
-var cssTimeout = null;
-function reloadCSS() {
-  if (cssTimeout) {
-    return;
-  }
+$(".delete2").click(function () {
+  $(".tag2").hide();
+});
 
-  cssTimeout = setTimeout(function () {
-    var links = document.querySelectorAll('link[rel="stylesheet"]');
-    for (var i = 0; i < links.length; i++) {
-      if (bundle.getBaseURL(links[i].href) === bundle.getBundleURL()) {
-        updateLink(links[i]);
-      }
-    }
+$(".delete3").click(function () {
+  $(".tag3").hide();
+  $(".category1").hide();
+});
 
-    cssTimeout = null;
-  }, 50);
-}
+// 카테고리 변경하기를 눌렀다가 변경할 생각이 없어서 x를 누르면 다시 원상태로 보이게 하는 로직
 
-module.exports = reloadCSS;
-},{"./bundle-url":99}],19:[function(require,module,exports) {
+$(".delete").click(function () {
+  $("article").hide();
+  $(".tagging").show();
+});
 
-var reloadCSS = require('_css_loader');
-module.hot.dispose(reloadCSS);
-module.hot.accept(reloadCSS);
-},{"./img\\caurosel01.jpg":26,"_css_loader":97}],74:[function(require,module,exports) {
+// 지우기 눌렀을때 초기화하는 것 && 시간나면 태그들어가는 것처럼 보이는 로직 짜기
+/* 
+
+
+*/
+},{}],74:[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -339,83 +313,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}],103:[function(require,module,exports) {
-var getBundleURL = require('./bundle-url').getBundleURL;
-
-function loadBundlesLazy(bundles) {
-  if (!Array.isArray(bundles)) {
-    bundles = [bundles];
-  }
-
-  var id = bundles[bundles.length - 1];
-
-  try {
-    return Promise.resolve(require(id));
-  } catch (err) {
-    if (err.code === 'MODULE_NOT_FOUND') {
-      return new LazyPromise(function (resolve, reject) {
-        loadBundles(bundles.slice(0, -1)).then(function () {
-          return require(id);
-        }).then(resolve, reject);
-      });
-    }
-
-    throw err;
-  }
-}
-
-function loadBundles(bundles) {
-  return Promise.all(bundles.map(loadBundle));
-}
-
-var bundleLoaders = {};
-function registerBundleLoader(type, loader) {
-  bundleLoaders[type] = loader;
-}
-
-module.exports = exports = loadBundlesLazy;
-exports.load = loadBundles;
-exports.register = registerBundleLoader;
-
-var bundles = {};
-function loadBundle(bundle) {
-  var id;
-  if (Array.isArray(bundle)) {
-    id = bundle[1];
-    bundle = bundle[0];
-  }
-
-  if (bundles[bundle]) {
-    return bundles[bundle];
-  }
-
-  var type = (bundle.substring(bundle.lastIndexOf('.') + 1, bundle.length) || bundle).toLowerCase();
-  var bundleLoader = bundleLoaders[type];
-  if (bundleLoader) {
-    return bundles[bundle] = bundleLoader(getBundleURL() + bundle).then(function (resolved) {
-      if (resolved) {
-        module.bundle.register(id, resolved);
-      }
-
-      return resolved;
-    });
-  }
-}
-
-function LazyPromise(executor) {
-  this.executor = executor;
-  this.promise = null;
-}
-
-LazyPromise.prototype.then = function (onSuccess, onError) {
-  if (this.promise === null) this.promise = new Promise(this.executor);
-  return this.promise.then(onSuccess, onError);
-};
-
-LazyPromise.prototype.catch = function (onError) {
-  if (this.promise === null) this.promise = new Promise(this.executor);
-  return this.promise.catch(onError);
-};
-},{"./bundle-url":99}],0:[function(require,module,exports) {
-var b=require(103);b.load([["caurosel01.6190dfde.jpg",26]]);
-},{}]},{},[74,0], null)
+},{}]},{},[74,57], null)
+//# sourceMappingURL=/listPage.21de04b0.map
