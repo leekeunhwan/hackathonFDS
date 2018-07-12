@@ -116,6 +116,63 @@ h2:after {
 
 /* MAIN CAUROSEL */
 
+.navigator a {
+  color: #ee3865 !important;
+  font-size: 1.3rem !important;
+}
+
+.navigator a:hover {
+  color: #fff !important;
+  text-decoration: none;
+}
+
+.search-input {
+  width: 500px;
+  padding: 10px 20px;
+  height: 62px;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #ee3865;
+  background-color: transparent;
+  border: 4px solid #ee3865;
+}
+
+.search-input .icon {
+  font-size: 3rem;
+}
+
+.search-input:focus,
+.search-input:hover {
+  border: 6px solid #ee3865 !important;
+}
+
+.carousel {
+  position: relative;
+}
+
+.header-big {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
+}
+
+.header-big p {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #ee3865;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.keywords {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 1.2rem !important;
+  font-weight: 400;
+}
+
 a {
   text-decoration: none;
 }
@@ -177,10 +234,28 @@ a {
   font-size: 50px;
 }
 
+.category__find {
+  color: #fff;
+  background-color: #ee3865;
+  height: 40px;
+  font-weight: 600;
+}
+
+.category__find:hover {
+  color: #fff;
+  background-color: #ee2d5e;
+}
+
 .btn-default.active,
 .btn-default:active {
   color: white;
-  background-color: salmon;
+  background-color: #504846;
+  border: 3px solid #504846;
+}
+
+.btn-default:active:hover {
+  color: #504846;
+  border: 3px solid #504846;
 }
 
 /* CATEGORY */
@@ -205,6 +280,7 @@ a {
 .section-schools-pick .picks-box {
   display: flex;
   justify-content: space-around;
+  transition: 0.5s;
 }
 
 .section-schools-pick .picks-image {
@@ -214,6 +290,7 @@ a {
   justify-content: space-between;
   height: 280px;
   position: relative;
+  transition: 0.5s;
 }
 
 /* .section-schools-pick .picks-image - 개별 이미지 설정 */
@@ -285,16 +362,19 @@ a {
 .section-schools-pick .image-caption {
   position: absolute;
   width: 100%;
+  height: 100%;
   padding: 5%;
   top: 50%;
   transform: translateY(-50%);
   background-color: transparent;
   color: transparent;
+  transition: 0.5s;
 }
 
 .section-schools-pick .picks-image:hover .image-caption {
-  /* background-color: rgba(255, 255, 255, 0.5); */
   color: #000000;
+  background-color: rgba(255, 255, 255, 0.8);
+  transition: 0.5s;
 }
 
 .section-schools-pick .picks-image:hover .image-caption .pick-date-time {
@@ -334,12 +414,6 @@ a {
 
 .section-schools-pick .pick-price {
   font-size: 1rem;
-}
-
-/* POPULAR PICKS */
-
-.section-popular-pick {
-  margin-top: -100px;
 }
 
 /* TESTIMONIALS */
@@ -386,7 +460,22 @@ a {
   vertical-align: middle;
 }
 
+.section-testimonial .writter a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.section-testimonial .writter a:hover {
+  color: #eded34;
+}
+
 /* TUTOR */
+
+.section-tutor {
+  margin-top: -80px;
+  background-color: #fffcfb;
+}
 
 .section-tutor .image-tutor {
   width: 35%;

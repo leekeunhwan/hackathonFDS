@@ -15,7 +15,6 @@
 <script src="/src.ab82ec71.js"></script></head>
 
 <body>
-	<a href="/detailPage.html">김혜민이 개발한다.</a>
 	<!--메인화면 캐러셀-->
 	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 		<ol class="carousel-indicators">
@@ -24,17 +23,28 @@
 			<li data-target="#carousel-example-generic" data-slide-to="2"></li>
 		</ol>
 
+		<div class="header-big">
+			<div>
+				<p>프리미엄 원데이 클래스 강좌</p>
+				<div class="search-box">
+					<input class="input search-input" type="text" value="아이 이유식 만들기">
+				</div>
+				<p class="keywords">#프리미엄 #원데이클래스 #이유식 #커뮤니티 #출산육아</p>
+			</div>
+		</div>
 		<div class="carousel-inner" role="listbox">
 			<div class="item active">
 				<div class="navigator clearfix">
-					<a class="logo" href="/">이름은 정해지면 넣기</a>
+					<a class="logo" href="/">
+						<img src="/logo.7bcab3ae.png" alt="logo">
+					</a>
 					<span class="navigator__right">
 						<a href="#">판매등록하기</a>
 						<a href="/login.html">로그인</a>
 						<a href="/join.html">무료 회원가입하기</a>
 					</span>
 				</div>
-				<img src="/caurosel01.6190dfde.jpg" alt="..." style="width: 100%; height: 600px; object-fit: 100%;">
+				<img class="carousel-image" src="/caurosel01.6190dfde.jpg" alt="..." style="width: 100%; height: 400px; object-fit: 100%;">
 				<div class="carousel-caption">
 				</div>
 			</div>
@@ -47,7 +57,7 @@
 						<a href="/join.html">무료 회원가입하기</a>
 					</span>
 				</div>
-				<img src="/caurosel02.60d15fc0.jpg" alt="..." style="width: 100%; height: 600px; object-fit: 100%;">
+				<img class="carousel-image" src="/caurosel02.60d15fc0.jpg" alt="..." style="width: 100%; height: 400px; object-fit: 100%;">
 				<div class="carousel-caption">
 				</div>
 			</div>
@@ -60,7 +70,7 @@
 						<a href="/join.html">무료 회원가입하기</a>
 					</span>
 				</div>
-				<img src="/caurosel03.eb5165a6.jpg" alt="..." style="width: 100%; height: 600px; object-fit: 100%;">
+				<img class="carousel-image" src="/caurosel03.eb5165a6.jpg" alt="..." style="width: 100%; height: 400px; object-fit: 100%;">
 				<div class="carousel-caption">
 				</div>
 			</div>
@@ -114,7 +124,7 @@
 					<i class="fas fa-walking"></i>산모건강</label>
 			</div>
 		</div>
-		<button class="btn btn-default category__find" onclick="listPage()">클래스 찾기</button>
+		<button class="button category__find" onclick="listPage()">클래스 찾기</button>
 	</div>
 
 	<section class="section-schools-pick">
@@ -174,29 +184,32 @@
 					</div>
 				</div>
 				<div class="picks-image span-1-of-3 col baby-option2 pic3">
-					<div class="image-caption">
-						<p class="pick-category">이유식 / 7~12개월</p>
-						<p class="pick-title">냠냠 건강한 이유식 만들기</p>
-						<p class="pick-date">
-							<i class="far fa-calendar-alt"></i> 2018. 7. 17 (화)
-							<span class="pick-date-time">PM 1:30 ~ PM 3:30</span>
-						</p>
-						<p class="pick-place">
-							<i class="fas fa-map-marker-alt"></i> 서울특별시 강남구 영동대로 511 트레이드타워 2104호
-						</p>
-						<p class="pick-price">
-							<i class="fas fa-won-sign"></i> 80,000</p>
-						<p class="pick-teacher">
-							<i class="fas fa-chalkboard-teacher"></i> 박소현
-						</p>
-						<p class="pick-rate">
-							<i class="fas fa-star"></i>
-							<i class="fas fa-star"></i>
-							<i class="fas fa-star"></i>
-							<i class="fas fa-star"></i>
-							<i class="fas fa-star"></i> (19)
-						</p>
-					</div>
+					<a href="/detailpage.html">
+						<div class="image-caption">
+
+							<p class="pick-category">이유식 / 7~12개월</p>
+							<p class="pick-title">냠냠 건강한 이유식 만들기</p>
+							<p class="pick-date">
+								<i class="far fa-calendar-alt"></i> 2018. 7. 17 (화)
+								<span class="pick-date-time">PM 1:30 ~ PM 3:30</span>
+							</p>
+							<p class="pick-place">
+								<i class="fas fa-map-marker-alt"></i> 서울특별시 강남구 영동대로 511 트레이드타워 2104호
+							</p>
+							<p class="pick-price">
+								<i class="fas fa-won-sign"></i> 80,000</p>
+							<p class="pick-teacher">
+								<i class="fas fa-chalkboard-teacher"></i> 박소현
+							</p>
+							<p class="pick-rate">
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i>
+								<i class="fas fa-star"></i> (19)
+							</p>
+						</div>
+					</a>
 				</div>
 				<div class="picks-image span-1-of-3 col baby-option2 pic4">
 					<div class="image-caption">
@@ -328,6 +341,54 @@
 		</div>
 	</section>
 
+	<section class="section-testimonial">
+		<div class="row">
+			<h2>Best Reviews</h2>
+		</div>
+		<div class="row">
+			<div class="span-1-of-3 col">
+				<p class="writter">
+					<a href="/detailpage.html">강사님이 너무 친절하시고, 돈이 아깝지 않은 강의였습니다! 좋았어요. 건강한 우리 아이 건강한 재료들로 만든 이유식으로 무럭무럭 자랄 수 있을 것 같아요!</a>
+				</p>
+				<p class="start-rate">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+				</p>
+				<img src="/customer-1.01652143.jpg" alt="Alberto Duncan"> 수원맘
+			</div>
+			<div class="span-1-of-3 col">
+				<p class="writter">
+					<a href="/detailpage.html">완전 제가 원하던 서비스! 정확히 원하는 수업을 찾을 수 있고, 집 근처 수업을 보여주니까 참여하기도 수월하고 강사님도 믿을 수 있어서 너무 좋습니다</a>
+				</p>
+				<p class="start-rate">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+				</p>
+				<img src="/customer-2.6e32c105.jpg" alt="Joana Silva"> 동탄맘예나맘
+			</div>
+			<div class="span-1-of-3 col">
+				<p class="writter">
+					<a href="/detailpage.html">I was looking for a quick and easy food delivery service in San Franciso. I tried a lot of them and ended up with Omnifood.
+						Best food delivery service in the Bay Area. Keep up the great work!</a>
+				</p>
+				<p class="start-rate">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star-half-alt"></i>
+				</p>
+				<img src="/customer-3.6b4dc953.jpg" alt="Milton Chapman"> Milton Chapman
+			</div>
+		</div>
+	</section>
+
 	<section class="section-schools-pick section-popular-pick">
 		<div class="row">
 			<h2>인기 클래스</h2>
@@ -428,48 +489,6 @@
 						<i class="fas fa-star"></i>
 						<i class="far fa-star"></i> (99+)</p>
 				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="section-testimonial">
-		<div class="row">
-			<h2>Best Reviews</h2>
-		</div>
-		<div class="row">
-			<div class="span-1-of-3 col">
-				<p class="writter">강사님이 너무 친절하시고, 돈이 아깝지 않은 강의였습니다! 좋았어요. 건강한 우리 아이 건강한 재료들로 만든 이유식으로 무럭무럭 자랄 수 있을 것 같아요!</p>
-				<p class="start-rate">
-					<i class="fas fa-star"></i>
-					<i class="fas fa-star"></i>
-					<i class="fas fa-star"></i>
-					<i class="fas fa-star"></i>
-					<i class="fas fa-star"></i>
-				</p>
-				<img src="/customer-1.01652143.jpg" alt="Alberto Duncan"> 수원맘
-			</div>
-			<div class="span-1-of-3 col">
-				<p class="writter">완전 제가 원하던 서비스! 정확히 원하는 수업을 찾을 수 있고, 집 근처 수업을 보여주니까 참여하기도 수월하고 강사님도 믿을 수 있어서 너무 좋습니다</p>
-				<p class="start-rate">
-					<i class="fas fa-star"></i>
-					<i class="fas fa-star"></i>
-					<i class="fas fa-star"></i>
-					<i class="fas fa-star"></i>
-					<i class="fas fa-star"></i>
-				</p>
-				<img src="/customer-2.6e32c105.jpg" alt="Joana Silva"> 동탄맘예나맘
-			</div>
-			<div class="span-1-of-3 col">
-				<p class="writter">I was looking for a quick and easy food delivery service in San Franciso. I tried a lot of them and ended up with Omnifood.
-					Best food delivery service in the Bay Area. Keep up the great work!</p>
-				<p class="start-rate">
-					<i class="fas fa-star"></i>
-					<i class="fas fa-star"></i>
-					<i class="fas fa-star"></i>
-					<i class="fas fa-star"></i>
-					<i class="fas fa-star-half-alt"></i>
-				</p>
-				<img src="/customer-3.6b4dc953.jpg" alt="Milton Chapman"> Milton Chapman
 			</div>
 		</div>
 	</section>
