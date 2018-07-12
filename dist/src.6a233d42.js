@@ -169,7 +169,7 @@ module.exports = reloadCSS;
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./img/caurosel01.jpg":30,"_css_loader":5}],15:[function(require,module,exports) {
+},{"./img/1.jpg":82,"./img/2.jpg":86,"./img/3.jpg":87,"./img/4.jpg":88,"./img/5.jpg":91,"./img/6.jpg":92,"./img/7.jpg":97,"./img/8.jpg":98,"./img/9.jpg":139,"./img/10.jpg":142,"./img/11.jpg":143,"./img/12.jpg":146,"_css_loader":5}],15:[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -417,5 +417,5 @@ LazyPromise.prototype.catch = function (onError) {
   return this.promise.catch(onError);
 };
 },{"./bundle-url":6}],0:[function(require,module,exports) {
-var b=require(69);b.load([["caurosel01.f564e6dc.jpg",30]]);
+var b=require(69);b.load([["1.4fd530ea.jpg",82],["2.0c5bf656.jpg",86],["3.9a161478.jpg",87],["4.6c3dfca1.jpg",88],["5.ffe4115d.jpg",91],["6.94a35236.jpg",92],["7.ea9e0982.jpg",97],["8.1a9611fe.jpg",98],["9.7a7d21c6.jpg",139],["10.1c1e214b.jpg",142],["11.55ae4200.jpg",143],["12.016b8d20.jpg",146]]);
 },{}]},{},[15,0], null)

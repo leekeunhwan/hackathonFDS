@@ -16,7 +16,6 @@
 </head>
 
 <body>
-	<a href="listPage.html">이근환이 개발한다.</a>
 	<a href="detailPage.html">김혜민이 개발한다.</a>
 	<!--메인화면 캐러셀-->
 	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -81,29 +80,42 @@
 		<div class="sort__menu">
 			<!--정렬 기준 버튼-->
 			<div class="baby__select">
-				<h2 class="category__baby">아기 개월 수</h2>
+				<h2 class="category__baby">카테고리</h2>
 			</div>
+
 			<div class="btn-group baby__select" data-toggle="buttons">
-				<label class="btn btn-default baby__option1">출산전</label>
-				<label class="btn btn-default baby__option2">0~3개월</label>
-				<label class="btn btn-default baby__option3">4~6개월</label>
-				<label class="btn btn-default baby__option4">7~12개월</label>
-				<label class="btn btn-default baby__option5">13~24개월</label>
+				<h3 style="text-align: left">아기 개월수</h3>
+				<label class="btn btn-default baby__option">
+					<i class="far fa-heart"></i>출산전</label>
+				<label class="btn btn-default baby__option">
+					<i class="far fa-heart"></i>0~3개월</label>
+				<label class="btn btn-default baby__option">
+					<i class="far fa-heart"></i>4~6개월</label>
+				<label class="btn btn-default baby__option">
+					<i class="far fa-heart"></i>7~12개월</label>
+				<label class="btn btn-default baby__option">
+					<i class="far fa-heart"></i>13~24개월</label>
 			</div>
 
 			<div class="category__select">
-				<h2 class="category__class">카테고리</h2>
 			</div>
-			<div class="btn-group" data-toggle="buttons">
-				<label class="btn btn-default">이유식</label>
-				<label class="btn btn-default">옷</label>
-				<label class="btn btn-default">생활용품</label>
-				<label class="btn btn-default">장난감</label>
-				<label class="btn btn-default">육아교육</label>
-				<label class="btn btn-default">산모건강</label>
+			<div class="btn-group baby__select2" data-toggle="buttons">
+				<h3 style="text-align: left">강의 종류</h3>
+				<label class="btn btn-default baby__option2">
+					<i class="fas fa-utensils"></i>이유식</label>
+				<label class="btn btn-default baby__option2">
+					<i class="fas fa-tshirt"></i>옷</label>
+				<label class="btn btn-default baby__option2">
+					<i class="fas fa-coffee"></i>생활용품</label>
+				<label class="btn btn-default baby__option2">
+					<i class="fas fa-map-pin"></i>장난감</label>
+				<label class="btn btn-default baby__option2">
+					<i class="fas fa-book-open"></i>육아교육</label>
+				<label class="btn btn-default baby__option2">
+					<i class="fas fa-walking"></i>산모건강</label>
 			</div>
 		</div>
-		<button class="btn btn-primary category__find" onclick='listPage()'>클래스 찾기</button>
+		<button class="btn btn-default category__find" onclick='listPage()'>클래스 찾기</button>
 	</div>
 
 	<section class="section-schools-pick">
@@ -112,134 +124,205 @@
 		</div>
 		<div class="sorting">
 			<div class="full-row clearfix picks-box">
-				<div class="picks-image span-1-of-3 col baby-option1">
+				<div class="picks-image span-1-of-3 col baby-option1 pic1">
 					<div class="image-caption">
-						<p class="pick-category">이유식</p>
-						<p class="pick-title">냠냠 브로컬리 이유식</p>
+						<p class="pick-category">이유식 / 7~12개월</p>
+						<p class="pick-title">우리아이 첫 이유식</p>
 						<p class="pick-date">
-							<i class="far fa-calendar-alt"></i> 월, 수, 금 AM 10:00 ~ PM 12:00</p>
+							<i class="far fa-calendar-alt"></i> 2018. 7. 19 (목)
+							<span class="pick-date-time">AM 10:00 ~ PM 12:30</span>
+						</p>
+						<p class="pick-place">
+							<i class="fas fa-map-marker-alt"></i> 서울 강남구 테헤란로 311 1221호
+						</p>
 						<p class="pick-price">
 							<i class="fas fa-won-sign"></i> 50,000</p>
+						<p class="pick-teacher">
+							<i class="fas fa-chalkboard-teacher"></i> 김강사
+						</p>
 						<p class="pick-rate">
 							<i class="fas fa-star"></i>
 							<i class="fas fa-star"></i>
 							<i class="fas fa-star"></i>
 							<i class="fas fa-star"></i>
-							<i class="fas fa-star"></i> (20)</p>
+							<i class="fas fa-star-half-alt"></i> (10)
+						</p>
 					</div>
 				</div>
-				<div class="picks-image span-1-of-3 col baby-option1">
+				<div class="picks-image span-1-of-3 col baby-option1 pic2">
 					<div class="image-caption">
-						<p class="pick-category">이유식</p>
-						<p class="pick-title">냠냠 브로컬리 이유식</p>
+						<p class="pick-category">이유식 / 13~24개월</p>
+						<p class="pick-title">편식 걱정 No! 맛있는 야채 이유식</p>
 						<p class="pick-date">
-							<i class="far fa-calendar-alt"></i> 월, 수, 금 AM 10:00 ~ PM 12:00</p>
+							<i class="far fa-calendar-alt"></i> 2018. 7. 20 (금)
+							<span class="pick-date-time">PM 2:30 ~ PM 5:30</span>
+						</p>
+						<p class="pick-place">
+							<i class="fas fa-map-marker-alt"></i> 서울 도봉구 도봉로 476
+						</p>
 						<p class="pick-price">
-							<i class="fas fa-won-sign"></i> 50,000</p>
+							<i class="fas fa-won-sign"></i> 70,000</p>
+						<p class="pick-teacher">
+							<i class="fas fa-chalkboard-teacher"></i> 나강사
+						</p>
 						<p class="pick-rate">
 							<i class="fas fa-star"></i>
 							<i class="fas fa-star"></i>
 							<i class="fas fa-star"></i>
 							<i class="fas fa-star"></i>
-							<i class="fas fa-star"></i> (20)</p>
+							<i class="fas fa-star"></i> (14)
+						</p>
 					</div>
 				</div>
-				<div class="picks-image span-1-of-3 col baby-option2">
+				<div class="picks-image span-1-of-3 col baby-option2 pic3">
 					<div class="image-caption">
-						<p class="pick-category">이유식</p>
-						<p class="pick-title">냠냠 브로컬리 이유식</p>
+						<p class="pick-category">이유식 / 7~12개월</p>
+						<p class="pick-title">냠냠 건강한 이유식 만들기</p>
 						<p class="pick-date">
-							<i class="far fa-calendar-alt"></i> 월, 수, 금 AM 10:00 ~ PM 12:00</p>
+							<i class="far fa-calendar-alt"></i> 2018. 7. 17 (화)
+							<span class="pick-date-time">PM 1:30 ~ PM 3:30</span>
+						</p>
+						<p class="pick-place">
+							<i class="fas fa-map-marker-alt"></i> 서울특별시 강남구 영동대로 511 트레이드타워 2104호
+						</p>
 						<p class="pick-price">
-							<i class="fas fa-won-sign"></i> 50,000</p>
+							<i class="fas fa-won-sign"></i> 80,000</p>
+						<p class="pick-teacher">
+							<i class="fas fa-chalkboard-teacher"></i> 박소현
+						</p>
 						<p class="pick-rate">
 							<i class="fas fa-star"></i>
 							<i class="fas fa-star"></i>
 							<i class="fas fa-star"></i>
 							<i class="fas fa-star"></i>
-							<i class="fas fa-star"></i> (20)</p>
+							<i class="fas fa-star"></i> (19)
+						</p>
 					</div>
 				</div>
-				<div class="picks-image span-1-of-3 col baby-option2">
+				<div class="picks-image span-1-of-3 col baby-option2 pic4">
 					<div class="image-caption">
-						<p class="pick-category">이유식</p>
-						<p class="pick-title">냠냠 브로컬리 이유식</p>
+						<p class="pick-category">옷 / 출산전</p>
+						<p class="pick-title">반가워 우리아가. 베넷저고리 만들기</p>
 						<p class="pick-date">
-							<i class="far fa-calendar-alt"></i> 월, 수, 금 AM 10:00 ~ PM 12:00</p>
+							<i class="far fa-calendar-alt"></i> 2018. 7. 17 (화)
+							<span class="pick-date-time">PM 1:00 ~ PM 5:00</span>
+						</p>
+						<p class="pick-place">
+							<i class="fas fa-map-marker-alt"></i> 서울특별시 강남구 영동대로 421 삼탄빌딩
+						</p>
 						<p class="pick-price">
-							<i class="fas fa-won-sign"></i> 50,000</p>
+							<i class="fas fa-won-sign"></i> 65,000</p>
+						<p class="pick-teacher">
+							<i class="fas fa-chalkboard-teacher"></i> 김승현
+						</p>
 						<p class="pick-rate">
 							<i class="fas fa-star"></i>
 							<i class="fas fa-star"></i>
 							<i class="fas fa-star"></i>
 							<i class="fas fa-star"></i>
-							<i class="fas fa-star"></i> (20)</p>
+							<i class="far fa-star"></i> (17)
+						</p>
 					</div>
 				</div>
 			</div>
-			<div class="full-row clearfix picks-box baby-option3">
-				<div class="picks-image span-1-of-3 col">
+			<div class="full-row clearfix picks-box">
+				<div class="picks-image span-1-of-3 col baby-option3 pic5">
 					<div class="image-caption">
-						<p class="pick-category">이유식</p>
-						<p class="pick-title">냠냠 브로컬리 이유식</p>
+						<p class="pick-category">옷 / 출산전, 0~3개월</p>
+						<p class="pick-title">보들보들 손싸개 만들기</p>
 						<p class="pick-date">
-							<i class="far fa-calendar-alt"></i> 월, 수, 금 AM 10:00 ~ PM 12:00</p>
+							<i class="far fa-calendar-alt"></i> 2018. 7. 18 (수)
+							<span class="pick-date-time">AM 10:00 ~ PM 12:00</span>
+						</p>
+						<p class="pick-place">
+							<i class="fas fa-map-marker-alt"></i> 서울특별시 강남구 도곡로 123 대경빌딩 6층
+						</p>
 						<p class="pick-price">
 							<i class="fas fa-won-sign"></i> 50,000</p>
+						<p class="pick-teacher">
+							<i class="fas fa-chalkboard-teacher"></i> 김나나
+						</p>
 						<p class="pick-rate">
 							<i class="fas fa-star"></i>
 							<i class="fas fa-star"></i>
 							<i class="fas fa-star"></i>
-							<i class="fas fa-star"></i>
-							<i class="fas fa-star"></i> (20)</p>
+							<i class="fas fa-star-half-alt"></i>
+							<i class="far fa-star"></i> (24)
+						</p>
 					</div>
 				</div>
-				<div class="picks-image span-1-of-3 col baby-option3">
+				<div class="picks-image span-1-of-3 col baby-option3 pic6">
 					<div class="image-caption">
-						<p class="pick-category">이유식</p>
-						<p class="pick-title">냠냠 브로컬리 이유식</p>
+						<p class="pick-category">옷 / 4~6개월</p>
+						<p class="pick-title">활용성 200%, 수면조끼</p>
 						<p class="pick-date">
-							<i class="far fa-calendar-alt"></i> 월, 수, 금 AM 10:00 ~ PM 12:00</p>
+							<i class="far fa-calendar-alt"></i> 2018. 7. 19 (목)
+							<span class="pick-date-time">PM 1:00 ~ PM 9:00</span>
+						</p>
+						<p class="pick-place">
+							<i class="fas fa-map-marker-alt"></i> 서울특별시 서초구 사임당로 8길 38
+						</p>
 						<p class="pick-price">
-							<i class="fas fa-won-sign"></i> 50,000</p>
+							<i class="fas fa-won-sign"></i> 90,000</p>
+						<p class="pick-teacher">
+							<i class="fas fa-chalkboard-teacher"></i> 이미나
+						</p>
 						<p class="pick-rate">
 							<i class="fas fa-star"></i>
 							<i class="fas fa-star"></i>
 							<i class="fas fa-star"></i>
 							<i class="fas fa-star"></i>
-							<i class="fas fa-star"></i> (20)</p>
+							<i class="far fa-star"></i> (14)
+						</p>
 					</div>
 				</div>
-				<div class="picks-image span-1-of-3 col baby-option3">
+				<div class="picks-image span-1-of-3 col baby-option3 pic7">
 					<div class="image-caption">
-						<p class="pick-category">이유식</p>
-						<p class="pick-title">냠냠 브로컬리 이유식</p>
+						<p class="pick-category">생활용품 / 출산전, 0~3개월, 4~6개월, 7~12개월, 13~24개월</p>
+						<p class="pick-title">잘자요, 우리아기. 모빌 만들기</p>
 						<p class="pick-date">
-							<i class="far fa-calendar-alt"></i> 월, 수, 금 AM 10:00 ~ PM 12:00</p>
+							<i class="far fa-calendar-alt"></i> 2018. 8. 01 (수)
+							<span class="pick-date-time">PM 1:00 ~ PM 6:00</span>
+						</p>
+						<p class="pick-place">
+							<i class="fas fa-map-marker-alt"></i> 서울특별시 광진구 능동로 8길 19
+						</p>
 						<p class="pick-price">
-							<i class="fas fa-won-sign"></i> 50,000</p>
+							<i class="fas fa-won-sign"></i> 120,000</p>
+						<p class="pick-teacher">
+							<i class="fas fa-chalkboard-teacher"></i> 김가나
+						</p>
 						<p class="pick-rate">
 							<i class="fas fa-star"></i>
 							<i class="fas fa-star"></i>
 							<i class="fas fa-star"></i>
 							<i class="fas fa-star"></i>
-							<i class="fas fa-star"></i> (20)</p>
+							<i class="fas fa-star-half-alt"></i> (21)
+						</p>
 					</div>
 				</div>
-				<div class="picks-image span-1-of-3 col baby-option4">
+				<div class="picks-image span-1-of-3 col baby-option4 pic8">
 					<div class="image-caption">
-						<p class="pick-category">이유식</p>
-						<p class="pick-title">냠냠 브로컬리 이유식</p>
+						<p class="pick-category">생활용품 / 13~24개월</p>
+						<p class="pick-title">우리아기 첫 숫가락, 원목으로!</p>
 						<p class="pick-date">
-							<i class="far fa-calendar-alt"></i> 월, 수, 금 AM 10:00 ~ PM 12:00</p>
+							<i class="far fa-calendar-alt"></i> 2018. 8. 03 (금)
+							<span class="pick-date-time">AM 10:00 ~ PM 6:00</span>
+						</p>
+						<p class="pick-place">
+							<i class="fas fa-map-marker-alt"></i> 서울특별시 송파구 송이로 6
+						</p>
 						<p class="pick-price">
-							<i class="fas fa-won-sign"></i> 50,000</p>
+							<i class="fas fa-won-sign"></i> 80,000</p>
+						<p class="pick-teacher">
+							<i class="fas fa-chalkboard-teacher"></i> 이선미
+						</p>
 						<p class="pick-rate">
 							<i class="fas fa-star"></i>
 							<i class="fas fa-star"></i>
 							<i class="fas fa-star"></i>
-							<i class="fas fa-star"></i>
-							<i class="fas fa-star"></i> (20)</p>
+							<i class="far fa-star"></i>
+							<i class="far fa-star"></i> (14)</p>
 					</div>
 				</div>
 			</div>
@@ -251,68 +334,100 @@
 			<h2>인기 클래스</h2>
 		</div>
 		<div class="full-row clearfix picks-box">
-			<div class="picks-image span-1-of-3 col">
+			<div class="picks-image span-1-of-3 col pic9">
 				<div class="image-caption">
-					<p class="pick-category">이유식</p>
-					<p class="pick-title">냠냠 브로컬리 이유식</p>
+					<p class="pick-category">생활용품 / 출산전, 0~3개월, 4~6개월, 7~12개월, 13~24개월</p>
+					<p class="pick-title">유기농면 시원한 여름이불</p>
 					<p class="pick-date">
-						<i class="far fa-calendar-alt"></i> 월, 수, 금 AM 10:00 ~ PM 12:00</p>
+						<i class="far fa-calendar-alt"></i> 2018. 7. 27 (금)
+						<span class="pick-date-time">PM 2:00 ~ PM 6:00</span>
+					</p>
+					<p class="pick-place">
+						<i class="fas fa-map-marker-alt"></i> 서울특별시 송파구 성내천로 64
+					</p>
 					<p class="pick-price">
 						<i class="fas fa-won-sign"></i> 50,000</p>
+					<p class="pick-teacher">
+						<i class="fas fa-chalkboard-teacher"></i> 박미선
+					</p>
 					<p class="pick-rate">
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i> (20)</p>
+						<i class="far fa-star"></i>
+						<i class="far fa-star"></i> (55)</p>
 				</div>
 			</div>
-			<div class="picks-image span-1-of-3 col">
+			<div class="picks-image span-1-of-3 col pic10">
 				<div class="image-caption">
-					<p class="pick-category">이유식</p>
-					<p class="pick-title">냠냠 브로컬리 이유식</p>
+					<p class="pick-category">장난감 / 7~12개월, 13~24개월</p>
+					<p class="pick-title">딸랑딸랑 딸랑이</p>
 					<p class="pick-date">
-						<i class="far fa-calendar-alt"></i> 월, 수, 금 AM 10:00 ~ PM 12:00</p>
+						<i class="far fa-calendar-alt"></i> 2018. 7. 23 (월)
+						<span class="pick-date-time">PM 1:30 ~ PM 5:30</span>
+					</p>
+					<p class="pick-place">
+						<i class="fas fa-map-marker-alt"></i> 서울특별시 송파구 백제고분로 488 호련빌딩 1-5동
+					</p>
 					<p class="pick-price">
-						<i class="fas fa-won-sign"></i> 50,000</p>
+						<i class="fas fa-won-sign"></i> 110,000</p>
+					<p class="pick-teacher">
+						<i class="fas fa-chalkboard-teacher"></i> 김하나
+					</p>
 					<p class="pick-rate">
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i> (20)</p>
+						<i class="fas fa-star-half-alt"></i> (72)</p>
 				</div>
 			</div>
-			<div class="picks-image span-1-of-3 col">
+			<div class="picks-image span-1-of-3 col pic11">
 				<div class="image-caption">
-					<p class="pick-category">이유식</p>
-					<p class="pick-title">냠냠 브로컬리 이유식</p>
+					<p class="pick-category">장난감 / 13~24개월</p>
+					<p class="pick-title">상상력을 기르는 보송보송 동화책</p>
 					<p class="pick-date">
-						<i class="far fa-calendar-alt"></i> 월, 수, 금 AM 10:00 ~ PM 12:00</p>
+						<i class="far fa-calendar-alt"></i> 2018. 7. 21 (토)
+						<span class="pick-date-time">PM 1:00 ~ AM 1:00</span>
+					</p>
+					<p class="pick-place">
+						<i class="fas fa-map-marker-alt"></i> 경기도 부천시 조마루로 285번길 50 골드존타워
+					</p>
 					<p class="pick-price">
-						<i class="fas fa-won-sign"></i> 50,000</p>
+						<i class="fas fa-won-sign"></i> 80,000</p>
+					<p class="pick-teacher">
+						<i class="fas fa-chalkboard-teacher"></i> 박소라
+					</p>
 					<p class="pick-rate">
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i> (20)</p>
+						<i class="fas fa-star-half-alt"></i> (47)</p>
 				</div>
 			</div>
-			<div class="picks-image span-1-of-3 col">
+			<div class="picks-image span-1-of-3 col pic12">
 				<div class="image-caption">
-					<p class="pick-category">이유식</p>
-					<p class="pick-title">냠냠 브로컬리 이유식</p>
+					<p class="pick-category">장난감 / 7~12개월</p>
+					<p class="pick-title">애착인형 만들기</p>
 					<p class="pick-date">
-						<i class="far fa-calendar-alt"></i> 월, 수, 금 AM 10:00 ~ PM 12:00</p>
+						<i class="far fa-calendar-alt"></i> 2018. 7. 22 (일)
+						<span class="pick-date-time">PM 1:00 ~ PM 9:00</span>
+					</p>
+					<p class="pick-place">
+						<i class="fas fa-map-marker-alt"></i> 서울특별시 강서구 강서로12길 22 1층 까꿍디미방
+					</p>
 					<p class="pick-price">
-						<i class="fas fa-won-sign"></i> 50,000</p>
+						<i class="fas fa-won-sign"></i> 90,000</p>
+					<p class="pick-teacher">
+						<i class="fas fa-chalkboard-teacher"></i> 최현
+					</p>
 					<p class="pick-rate">
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
 						<i class="fas fa-star"></i>
-						<i class="fas fa-star"></i> (20)</p>
+						<i class="far fa-star"></i> (99+)</p>
 				</div>
 			</div>
 		</div>
