@@ -164,12 +164,12 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":99}],56:[function(require,module,exports) {
+},{"./bundle-url":99}],60:[function(require,module,exports) {
 
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./..\\img\\caurosel01.jpg":26,"_css_loader":97}],74:[function(require,module,exports) {
+},{"./..\\img\\1.jpg":179,"./..\\img\\2.jpg":180,"./..\\img\\3.jpg":181,"./..\\img\\4.jpg":182,"./..\\img\\5.jpg":183,"./..\\img\\6.jpg":188,"./..\\img\\7.jpg":184,"./..\\img\\8.jpg":185,"./..\\img\\9.jpg":186,"./..\\img\\10.jpg":187,"_css_loader":97}],35:[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -198,7 +198,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '10931' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '5305' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -417,5 +417,5 @@ LazyPromise.prototype.catch = function (onError) {
   return this.promise.catch(onError);
 };
 },{"./bundle-url":99}],0:[function(require,module,exports) {
-var b=require(103);b.load([["caurosel01.6190dfde.jpg",26]]);
-},{}]},{},[74,0], null)
+var b=require(103);b.load([["1.77c3a037.jpg",179],["2.e25aae5e.jpg",180],["3.3160d9ff.jpg",181],["4.17c7b5c9.jpg",182],["5.74d306ef.jpg",183],["6.e1c75a85.jpg",188],["7.20528d80.jpg",184],["8.7ab28950.jpg",185],["9.ddb86740.jpg",186],["10.44398445.jpg",187]]);
+},{}]},{},[35,0], null)
