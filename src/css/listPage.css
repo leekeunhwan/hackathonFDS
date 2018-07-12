@@ -120,6 +120,17 @@ a {
 	text-decoration: none;
 }
 
+.navigator a {
+	color: #ee3865 !important;
+	font-size: 1.1rem !important;
+	font-weight: 600;
+}
+
+.navigator a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
 .navigator {
 	position: relative;
 	width: 100%;
@@ -139,6 +150,10 @@ a {
 
 .navigator__right a {
 	margin: 0 10px;
+}
+
+.page-logo {
+	height: 45%;
 }
 
 /* CATEGORY */

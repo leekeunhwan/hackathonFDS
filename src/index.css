@@ -930,6 +930,7 @@ footer>div>p {
   text-align: right;
   top: 1.5vh;
   height: 50px;
+  padding: 0;
 }
 
 .detailpage-nav .navigator a {
@@ -943,4 +944,8 @@ footer>div>p {
 
 .detailpage-nav .navigator__right a {
   margin: 0 10px;
+}
+
+.detailpage-nav .page-logo {
+  height: 45%;
 }
