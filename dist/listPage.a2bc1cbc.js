@@ -164,12 +164,12 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":99}],19:[function(require,module,exports) {
+},{"./bundle-url":99}],60:[function(require,module,exports) {
 
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./img\\1.jpg":179,"./img\\2.jpg":180,"./img\\3.jpg":181,"./img\\4.jpg":182,"./img\\5.jpg":183,"./img\\6.jpg":188,"./img\\7.jpg":184,"./img\\8.jpg":185,"./img\\9.jpg":186,"./img\\10.jpg":187,"./img\\11.jpg":189,"./img\\12.jpg":190,"_css_loader":97}],35:[function(require,module,exports) {
+},{"./..\\img\\1.jpg":179,"./..\\img\\2.jpg":180,"./..\\img\\3.jpg":181,"./..\\img\\4.jpg":182,"./..\\img\\5.jpg":183,"./..\\img\\6.jpg":188,"./..\\img\\7.jpg":184,"./..\\img\\8.jpg":185,"./..\\img\\9.jpg":186,"./..\\img\\10.jpg":187,"_css_loader":97}],35:[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -417,5 +417,5 @@ LazyPromise.prototype.catch = function (onError) {
   return this.promise.catch(onError);
 };
 },{"./bundle-url":99}],0:[function(require,module,exports) {
-var b=require(103);b.load([["1.77c3a037.jpg",179],["2.e25aae5e.jpg",180],["3.3160d9ff.jpg",181],["4.17c7b5c9.jpg",182],["5.74d306ef.jpg",183],["6.e1c75a85.jpg",188],["7.20528d80.jpg",184],["8.7ab28950.jpg",185],["9.ddb86740.jpg",186],["10.44398445.jpg",187],["11.9644f24d.jpg",189],["12.eb5d0f42.jpg",190]]);
+var b=require(103);b.load([["1.77c3a037.jpg",179],["2.e25aae5e.jpg",180],["3.3160d9ff.jpg",181],["4.17c7b5c9.jpg",182],["5.74d306ef.jpg",183],["6.e1c75a85.jpg",188],["7.20528d80.jpg",184],["8.7ab28950.jpg",185],["9.ddb86740.jpg",186],["10.44398445.jpg",187]]);
 },{}]},{},[35,0], null)
