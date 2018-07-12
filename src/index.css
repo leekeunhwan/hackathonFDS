@@ -782,7 +782,7 @@ footer>div>p {
   height: 400px;
   width: 300px;
   /* margin-left: 10%; */
-  background-color: #cfbda9;
+  background-color: #ddd;
 }
 
 /* 리뷰 탭 */
@@ -905,6 +905,8 @@ footer>div>p {
 
 .price-box .btn-like {
   height: 45px;
+  color: #ee2d5e;
+  background-color: #fff;
 }
 
 .price-box .btn-apply {
