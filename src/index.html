@@ -103,7 +103,7 @@
 				<label class="btn btn-default">산모건강</label>
 			</div>
 		</div>
-		<button class="btn btn-primary category__find">클래스 찾기</button>
+		<button class="btn btn-primary category__find" onclick='listPage()'>클래스 찾기</button>
 	</div>
 
 	<section class="section-schools-pick">
@@ -450,7 +450,18 @@
 	</footer>
 	<script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-	<script src="index.js"></script>
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<script>
+		function listPage() {
+			swal({
+				icon: "success",
+				title: "검색이 완료되었습니다.",
+			}).then((value) => {
+				window.location.replace('/listPage.html')
+			})
+		}
+	</script>
+
 </body>
 
 </html>
