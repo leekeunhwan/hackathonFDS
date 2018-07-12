@@ -116,6 +116,76 @@ h2:after {
 
 /* MAIN CAUROSEL */
 
+.navigator a {
+  color: #ee3865 !important;
+  font-size: 1.1rem !important;
+  font-weight: 600;
+}
+
+.navigator a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.search-input {
+  width: 500px;
+  padding: 10px 20px;
+  height: 62px;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #f2e4d7;
+  background-color: transparent;
+  border: 4px solid #f2e4d7;
+}
+
+.is-right {
+  right: 5% !important;
+}
+
+.fa-search {
+  font-size: 2.4rem;
+  color: #f2e4d7;
+}
+
+.search-input .icon {
+  font-size: 3rem;
+}
+
+.search-input:hover {
+  border: 4px solid #f2e4d7;
+}
+
+.search-input:focus {
+  border: 6px solid #f2e4d7 !important;
+}
+
+.carousel {
+  position: relative;
+}
+
+.header-big {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+}
+
+.header-big p {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #ee3865;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.keywords {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 1.2rem !important;
+  font-weight: 400;
+}
+
 a {
   text-decoration: none;
 }
@@ -126,11 +196,6 @@ a {
   text-align: right;
   top: 5vh;
   padding: 0 28vh;
-}
-
-.navigator a {
-  color: salmon;
-  font-weight: bold;
 }
 
 .navigator .logo {
@@ -151,10 +216,55 @@ a {
   margin-bottom: 10px;
 }
 
+.baby__option {
+  width: 150px;
+  height: 130px;
+  font-size: 20px;
+  color: #b5aba1;
+}
+
+.baby__option2 {
+  width: 125px;
+  height: 130px;
+  font-size: 20px;
+  color: #b5aba1;
+}
+
+.baby__option .fa-heart,
+.baby__option2 .fa-utensils,
+.baby__option2 .fa-tshirt,
+.baby__option2 .fa-coffee,
+.baby__option2 .fa-map-pin,
+.baby__option2 .fa-book-open,
+.baby__option2 .fa-walking {
+  display: block;
+  margin: 15px auto;
+  font-size: 50px;
+}
+
+.category__find {
+  color: #fff;
+  background-color: #ee3865;
+  height: 40px;
+  font-weight: 600;
+  width: 620px;
+}
+
+.category__find:hover {
+  color: #fff;
+  background-color: #ee2d5e;
+}
+
 .btn-default.active,
 .btn-default:active {
   color: white;
-  background-color: salmon;
+  background-color: #504846;
+  border: 3px solid #504846;
+}
+
+.btn-default:active:hover {
+  color: #504846;
+  border: 3px solid #504846;
 }
 
 /* CATEGORY */
@@ -166,17 +276,20 @@ a {
 
 .category__find {
   margin-top: 2rem;
+  width: 750px;
 }
 
 /* SCHOOLS PICK */
 
-.section-schools-pick .picks-image:hover .fa-star {
+.section-schools-pick .picks-image:hover .fa-star,
+.section-schools-pick .picks-image:hover .fa-star-half-alt {
   color: #eded34;
 }
 
 .section-schools-pick .picks-box {
   display: flex;
   justify-content: space-around;
+  transition: 0.5s;
 }
 
 .section-schools-pick .picks-image {
@@ -184,10 +297,71 @@ a {
   float: left;
   margin-bottom: 15px;
   justify-content: space-between;
-  background-image: url(img/caurosel01.jpg);
-  background-size: cover;
   height: 280px;
   position: relative;
+  transition: 0.5s;
+}
+
+/* .section-schools-pick .picks-image - 개별 이미지 설정 */
+
+.pic1 {
+  background-image: url('img/1.jpg');
+  background-size: cover;
+}
+
+.pic2 {
+  background-image: url('img/2.jpg');
+  background-size: cover;
+}
+
+.pic3 {
+  background-image: url('img/3.jpg');
+  background-size: cover;
+}
+
+.pic4 {
+  background-image: url('img/4.jpg');
+  background-size: cover;
+}
+
+.pic5 {
+  background-image: url('img/5.jpg');
+  background-size: cover;
+}
+
+.pic6 {
+  background-image: url('img/6.jpg');
+  background-size: cover;
+}
+
+.pic7 {
+  background-image: url('img/7.jpg');
+  background-size: cover;
+}
+
+.pic8 {
+  background-image: url('img/8.jpg');
+  background-size: cover;
+}
+
+.pic9 {
+  background-image: url('img/9.jpg');
+  background-size: cover;
+}
+
+.pic10 {
+  background-image: url('img/10.jpg');
+  background-size: cover;
+}
+
+.pic11 {
+  background-image: url('img/11.jpg');
+  background-size: cover;
+}
+
+.pic12 {
+  background-image: url('img/12.jpg');
+  background-size: cover;
 }
 
 .section-schools-pick .picks-image:hover {
@@ -197,19 +371,27 @@ a {
 .section-schools-pick .image-caption {
   position: absolute;
   width: 100%;
+  height: 100%;
   padding: 5%;
   top: 50%;
   transform: translateY(-50%);
   background-color: transparent;
   color: transparent;
+  transition: 0.5s;
 }
 
 .section-schools-pick .picks-image:hover .image-caption {
-  /* background-color: rgba(255, 255, 255, 0.5); */
   color: #000000;
+  background-color: rgba(255, 255, 255, 0.8);
+  transition: 0.5s;
+}
+
+.section-schools-pick .picks-image:hover .image-caption .pick-date-time {
+  color: #3f3f3f;
 }
 
 .section-schools-pick .pick-category {
+  font-weight: 500;
   font-size: 0.8rem;
   padding-bottom: 8px;
 }
@@ -220,21 +402,27 @@ a {
   padding-bottom: 8px;
 }
 
+.section-schools-pick .pick-place,
 .section-schools-pick .pick-price,
-.section-schools-pick .pick-date {
+.section-schools-pick .pick-date,
+.section-schools-pick .pick-teacher {
   padding-bottom: 6px;
 }
 
+.section-schools-pick .pick-place,
 .section-schools-pick .pick-date,
-.section-schools-pick .pick-price,
-.section-schools-pick .pick-rate {
+.section-schools-pick .pick-rate,
+.section-schools-pick .pick-teacher {
   font-size: 0.8rem;
 }
 
-/* POPULAR PICKS */
+.section-schools-pick .pick-place,
+.section-schools-pick .pick-teacher {
+  font-weight: 400;
+}
 
-.section-popular-pick {
-  margin-top: -100px;
+.section-schools-pick .pick-price {
+  font-size: 1rem;
 }
 
 /* TESTIMONIALS */
@@ -281,7 +469,22 @@ a {
   vertical-align: middle;
 }
 
+.section-testimonial .writter a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.section-testimonial .writter a:hover {
+  color: #eded34;
+}
+
 /* TUTOR */
+
+.section-tutor {
+  margin-top: -80px;
+  background-color: #fffcfb;
+}
 
 .section-tutor .image-tutor {
   width: 35%;
@@ -588,7 +791,7 @@ footer>div>p {
   height: 400px;
   width: 300px;
   /* margin-left: 10%; */
-  background-color: #cfbda9;
+  background-color: #ddd;
 }
 
 /* 리뷰 탭 */
@@ -711,9 +914,47 @@ footer>div>p {
 
 .price-box .btn-like {
   height: 45px;
+  color: #ee2d5e;
+  background-color: #fff;
 }
 
 .price-box .btn-apply {
   width: 200px;
   height: 45px;
+}
+
+.class-image02 {
+  background-position: 0 -50px;
+}
+
+/* detailpage-nav */
+
+.detailpage-nav a {
+  text-decoration: none;
+}
+
+.detailpage-nav .navigator {
+  position: relative;
+  width: 100%;
+  text-align: right;
+  top: 1.5vh;
+  height: 50px;
+  padding: 0;
+}
+
+.detailpage-nav .navigator a {
+  color: salmon;
+  font-weight: bold;
+}
+
+.detailpage-nav .navigator .logo {
+  float: left;
+}
+
+.detailpage-nav .navigator__right a {
+  margin: 0 10px;
+}
+
+.detailpage-nav .page-logo {
+  height: 35px;
 }
