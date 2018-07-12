@@ -118,11 +118,12 @@ h2:after {
 
 .navigator a {
   color: #ee3865 !important;
-  font-size: 1.3rem !important;
+  font-size: 1.1rem !important;
+  font-weight: 600;
 }
 
 .navigator a:hover {
-  color: #fff !important;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -132,18 +133,21 @@ h2:after {
   height: 62px;
   font-size: 2rem;
   font-weight: 600;
-  color: #ee3865;
+  color: #f2e4d7;
   background-color: transparent;
-  border: 4px solid #ee3865;
+  border: 4px solid #f2e4d7;
 }
 
 .search-input .icon {
   font-size: 3rem;
 }
 
-.search-input:focus,
 .search-input:hover {
-  border: 6px solid #ee3865 !important;
+  border: 4px solid #fff;
+}
+
+.search-input:focus {
+  border: 6px solid #fff !important;
 }
 
 .carousel {
@@ -152,9 +156,9 @@ h2:after {
 
 .header-big {
   position: absolute;
-  top: 30%;
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
   z-index: 999;
 }
 
@@ -183,11 +187,6 @@ a {
   text-align: right;
   top: 5vh;
   padding: 0 28vh;
-}
-
-.navigator a {
-  color: salmon;
-  font-weight: bold;
 }
 
 .navigator .logo {
@@ -239,6 +238,7 @@ a {
   background-color: #ee3865;
   height: 40px;
   font-weight: 600;
+  width: 620px;
 }
 
 .category__find:hover {
