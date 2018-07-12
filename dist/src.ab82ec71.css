@@ -151,6 +151,32 @@ a {
   margin-bottom: 10px;
 }
 
+.baby__option {
+  width: 150px;
+  height: 130px;
+  font-size: 20px;
+  color: #b5aba1;
+}
+
+.baby__option2 {
+  width: 125px;
+  height: 130px;
+  font-size: 20px;
+  color: #b5aba1;
+}
+
+.baby__option .fa-heart,
+.baby__option2 .fa-utensils,
+.baby__option2 .fa-tshirt,
+.baby__option2 .fa-coffee,
+.baby__option2 .fa-map-pin,
+.baby__option2 .fa-book-open,
+.baby__option2 .fa-walking {
+  display: block;
+  margin: 15px auto;
+  font-size: 50px;
+}
+
 .btn-default.active,
 .btn-default:active {
   color: white;
@@ -166,11 +192,13 @@ a {
 
 .category__find {
   margin-top: 2rem;
+  width: 750px;
 }
 
 /* SCHOOLS PICK */
 
-.section-schools-pick .picks-image:hover .fa-star {
+.section-schools-pick .picks-image:hover .fa-star,
+.section-schools-pick .picks-image:hover .fa-star-half-alt {
   color: #eded34;
 }
 
@@ -184,10 +212,70 @@ a {
   float: left;
   margin-bottom: 15px;
   justify-content: space-between;
-  background-image: url(caurosel01.6190dfde.jpg);
-  background-size: cover;
   height: 280px;
   position: relative;
+}
+
+/* .section-schools-pick .picks-image - 개별 이미지 설정 */
+
+.pic1 {
+  background-image: url('1.77c3a037.jpg');
+  background-size: cover;
+}
+
+.pic2 {
+  background-image: url('2.e25aae5e.jpg');
+  background-size: cover;
+}
+
+.pic3 {
+  background-image: url('3.3160d9ff.jpg');
+  background-size: cover;
+}
+
+.pic4 {
+  background-image: url('4.17c7b5c9.jpg');
+  background-size: cover;
+}
+
+.pic5 {
+  background-image: url('5.74d306ef.jpg');
+  background-size: cover;
+}
+
+.pic6 {
+  background-image: url('6.e1c75a85.jpg');
+  background-size: cover;
+}
+
+.pic7 {
+  background-image: url('7.20528d80.jpg');
+  background-size: cover;
+}
+
+.pic8 {
+  background-image: url('8.7ab28950.jpg');
+  background-size: cover;
+}
+
+.pic9 {
+  background-image: url('9.ddb86740.jpg');
+  background-size: cover;
+}
+
+.pic10 {
+  background-image: url('10.44398445.jpg');
+  background-size: cover;
+}
+
+.pic11 {
+  background-image: url('11.9644f24d.jpg');
+  background-size: cover;
+}
+
+.pic12 {
+  background-image: url('12.eb5d0f42.jpg');
+  background-size: cover;
 }
 
 .section-schools-pick .picks-image:hover {
@@ -209,7 +297,12 @@ a {
   color: #000000;
 }
 
+.section-schools-pick .picks-image:hover .image-caption .pick-date-time {
+  color: #3f3f3f;
+}
+
 .section-schools-pick .pick-category {
+  font-weight: 500;
   font-size: 0.8rem;
   padding-bottom: 8px;
 }
@@ -220,15 +313,27 @@ a {
   padding-bottom: 8px;
 }
 
+.section-schools-pick .pick-place,
 .section-schools-pick .pick-price,
-.section-schools-pick .pick-date {
+.section-schools-pick .pick-date,
+.section-schools-pick .pick-teacher {
   padding-bottom: 6px;
 }
 
+.section-schools-pick .pick-place,
 .section-schools-pick .pick-date,
-.section-schools-pick .pick-price,
-.section-schools-pick .pick-rate {
+.section-schools-pick .pick-rate,
+.section-schools-pick .pick-teacher {
   font-size: 0.8rem;
+}
+
+.section-schools-pick .pick-place,
+.section-schools-pick .pick-teacher {
+  font-weight: 400;
+}
+
+.section-schools-pick .pick-price {
+  font-size: 1rem;
 }
 
 /* POPULAR PICKS */
