@@ -138,16 +138,25 @@ h2:after {
   border: 4px solid #f2e4d7;
 }
 
+.is-right {
+  right: 5% !important;
+}
+
+.fa-search {
+  font-size: 2.4rem;
+  color: #f2e4d7;
+}
+
 .search-input .icon {
   font-size: 3rem;
 }
 
 .search-input:hover {
-  border: 4px solid #fff;
+  border: 4px solid #f2e4d7;
 }
 
 .search-input:focus {
-  border: 6px solid #fff !important;
+  border: 6px solid #f2e4d7 !important;
 }
 
 .carousel {
@@ -947,5 +956,5 @@ footer>div>p {
 }
 
 .detailpage-nav .page-logo {
-  height: 45%;
+  height: 35px;
 }
