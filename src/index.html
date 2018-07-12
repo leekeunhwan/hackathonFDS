@@ -3,332 +3,465 @@
 <html lang="ko">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
-  <link rel='stylesheet' href="index.css">
-  <title>first initial</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	    crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+	<link rel='stylesheet' href="index.css">
+	<title>first initial</title>
 </head>
 
 <body>
-  <!--메인화면 캐러셀-->
-  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-      <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-      <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-    </ol>
+	<a href="listPage.html">이근환이 개발한다.</a>
+	<a href="detailPage.html">김혜민이 개발한다.</a>
+	<!--메인화면 캐러셀-->
+	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+		<ol class="carousel-indicators">
+			<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+			<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+			<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+		</ol>
 
-    <div class="carousel-inner" role="listbox">
-      <div class="item active">
-        <div class="navigator clearfix">
-          <a class="logo" href="#">이름은 정해지면 넣기</a>
-          <span class="navigator__right">
-            <a href="#">판매등록하기</a>
-            <a href="#">로그인</a>
-            <a href="#">무료 회원가입하기</a>
-          </span>
-        </div>
-        <img src="./img/caurosel01.jpg" alt="..." style="width: 100%; height: 600px; object-fit: 100%;">
-        <div class="carousel-caption">
-        </div>
-      </div>
-      <div class="item">
-        <div class="navigator clearfix">
-          <a class="logo" href="#">이름은 정해지면 넣기</a>
-          <span class="navigator__right">
-            <a href="#">판매등록하기</a>
-            <a href="#">로그인</a>
-            <a href="#">무료 회원가입하기</a>
-          </span>
-        </div>
-        <img src="./img/caurosel02.jpg" alt="..." style="width: 100%; height: 600px; object-fit: 100%;">
-        <div class="carousel-caption">
-        </div>
-      </div>
-      <div class="item">
-        <div class="navigator clearfix">
-          <a class="logo" href="#">이름은 정해지면 넣기</a>
-          <span class="navigator__right">
-            <a href="#">판매등록하기</a>
-            <a href="#">로그인</a>
-            <a href="#">무료 회원가입하기</a>
-          </span>
-        </div>
-        <img src="./img/caurosel03.jpg" alt="..." style="width: 100%; height: 600px; object-fit: 100%;">
-        <div class="carousel-caption">
-        </div>
-      </div>
-    </div>
-    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
+		<div class="carousel-inner" role="listbox">
+			<div class="item active">
+				<div class="navigator clearfix">
+					<a class="logo" href="/">이름은 정해지면 넣기</a>
+					<span class="navigator__right">
+						<a href="#">판매등록하기</a>
+						<a href="login.html">로그인</a>
+						<a href="join.html">무료 회원가입하기</a>
+					</span>
+				</div>
+				<img src="./img/caurosel01.jpg" alt="..." style="width: 100%; height: 600px; object-fit: 100%;">
+				<div class="carousel-caption">
+				</div>
+			</div>
+			<div class="item">
+				<div class="navigator clearfix">
+					<a class="logo" href="/">이름은 정해지면 넣기</a>
+					<span class="navigator__right">
+						<a href="#">판매등록하기</a>
+						<a href="login.html">로그인</a>
+						<a href="join.html">무료 회원가입하기</a>
+					</span>
+				</div>
+				<img src="./img/caurosel02.jpg" alt="..." style="width: 100%; height: 600px; object-fit: 100%;">
+				<div class="carousel-caption">
+				</div>
+			</div>
+			<div class="item">
+				<div class="navigator clearfix">
+					<a class="logo" href="/">이름은 정해지면 넣기</a>
+					<span class="navigator__right">
+						<a href="#">판매등록하기</a>
+						<a href="login.html">로그인</a>
+						<a href="join.html">무료 회원가입하기</a>
+					</span>
+				</div>
+				<img src="./img/caurosel03.jpg" alt="..." style="width: 100%; height: 600px; object-fit: 100%;">
+				<div class="carousel-caption">
+				</div>
+			</div>
+		</div>
+		<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+		<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+		</a>
+	</div>
 
-  <div class="category__controller">
-    <div class="sort__menu">
-      <!--정렬 기준 버튼-->
-      <div class="baby__select">
-        아기 개월 수
-      </div>
-      <div class="btn-group" data-toggle="buttons">
-        <label class="btn btn-default">
-            <input type="checkbox" autocomplete="off" checked> 출산전
-        </label>
-        <label class="btn btn-default">
-            <input type="checkbox" autocomplete="off"> 0~3개월
-        </label>
-        <label class="btn btn-default">
-            <input type="checkbox" autocomplete="off"> 4~6개월
-        </label>
-        <label class="btn btn-default">
-            <input type="checkbox" autocomplete="off"> 7~12개월
-        </label>
-        <label class="btn btn-default">
-            <input type="checkbox" autocomplete="off"> 13~24개월
-        </label>
-      </div>
+	<div class="category__controller">
+		<div class="sort__menu">
+			<!--정렬 기준 버튼-->
+			<div class="baby__select">
+				<h2 class="category__baby">아기 개월 수</h2>
+			</div>
+			<div class="btn-group baby__select" data-toggle="buttons">
+				<label class="btn btn-default baby__option1">출산전</label>
+				<label class="btn btn-default baby__option2">0~3개월</label>
+				<label class="btn btn-default baby__option3">4~6개월</label>
+				<label class="btn btn-default baby__option4">7~12개월</label>
+				<label class="btn btn-default baby__option5">13~24개월</label>
+			</div>
 
-      <div class="category__select">
-        <h2>카테고리</h2>
-      </div>
-      <div class="btn-group" data-toggle="buttons">
-        <label class="btn btn-default">
-            <input type="checkbox" autocomplete="off" checked> 이유식
-        </label>
-        <label class="btn btn-default">
-            <input type="checkbox" autocomplete="off"> 옷
-        </label>
-        <label class="btn btn-default">
-            <input type="checkbox" autocomplete="off"> 생활용품
-        </label>
-        <label class="btn btn-default">
-            <input type="checkbox" autocomplete="off"> 장난감
-        </label>
-        <label class="btn btn-default">
-            <input type="checkbox" autocomplete="off"> 육아교육
-        </label>
-        <label class="btn btn-default">
-            <input type="checkbox" autocomplete="off"> 산모건강
-        </label>
-      </div>
-    </div>
-    <button class="btn btn-primary">클래스 찾기</button>
-  </div>
+			<div class="category__select">
+				<h2 class="category__class">카테고리</h2>
+			</div>
+			<div class="btn-group" data-toggle="buttons">
+				<label class="btn btn-default">이유식</label>
+				<label class="btn btn-default">옷</label>
+				<label class="btn btn-default">생활용품</label>
+				<label class="btn btn-default">장난감</label>
+				<label class="btn btn-default">육아교육</label>
+				<label class="btn btn-default">산모건강</label>
+			</div>
+		</div>
+		<button class="btn btn-primary category__find" onclick='listPage()'>클래스 찾기</button>
+	</div>
 
-  <section class="section-schools-pick">
-    <div class="row">
-      <h2>School's Picks</h2>
-    </div>
-    <div class="full-row clearfix picks-box">
-      <div class="picks-image span-1-of-3 col">
-        <div class="image-caption">
-          <p class="pick-category">이유식</p>
-          <p class="pick-title">냠냠 브로컬리 이유식</p>
-          <p class="pick-date"><i class="far fa-calendar-alt"></i> 월, 수, 금 AM 10:00 ~ PM 12:00</p>
-          <p class="pick-price"><i class="fas fa-won-sign"></i> 50,000</p>
-          <p class="pick-rate"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> (20)</p>
-        </div>
-      </div>
-      <div class="picks-image span-1-of-3 col">
-        <div class="image-caption">
-          <p class="pick-category">이유식</p>
-          <p class="pick-title">냠냠 브로컬리 이유식</p>
-          <p class="pick-date"><i class="far fa-calendar-alt"></i> 월, 수, 금 AM 10:00 ~ PM 12:00</p>
-          <p class="pick-price"><i class="fas fa-won-sign"></i> 50,000</p>
-          <p class="pick-rate"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> (20)</p>
-        </div>
-      </div>
-      <div class="picks-image span-1-of-3 col">
-        <div class="image-caption">
-          <p class="pick-category">이유식</p>
-          <p class="pick-title">냠냠 브로컬리 이유식</p>
-          <p class="pick-date"><i class="far fa-calendar-alt"></i> 월, 수, 금 AM 10:00 ~ PM 12:00</p>
-          <p class="pick-price"><i class="fas fa-won-sign"></i> 50,000</p>
-          <p class="pick-rate"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> (20)</p>
-        </div>
-      </div>
-      <div class="picks-image span-1-of-3 col">
-        <div class="image-caption">
-          <p class="pick-category">이유식</p>
-          <p class="pick-title">냠냠 브로컬리 이유식</p>
-          <p class="pick-date"><i class="far fa-calendar-alt"></i> 월, 수, 금 AM 10:00 ~ PM 12:00</p>
-          <p class="pick-price"><i class="fas fa-won-sign"></i> 50,000</p>
-          <p class="pick-rate"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> (20)</p>
-        </div>
-      </div>
-    </div>
-    <div class="full-row clearfix picks-box">
-      <div class="picks-image span-1-of-3 col">
-        <div class="image-caption">
-          <p class="pick-category">이유식</p>
-          <p class="pick-title">냠냠 브로컬리 이유식</p>
-          <p class="pick-date"><i class="far fa-calendar-alt"></i> 월, 수, 금 AM 10:00 ~ PM 12:00</p>
-          <p class="pick-price"><i class="fas fa-won-sign"></i> 50,000</p>
-          <p class="pick-rate"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> (20)</p>
-        </div>
-      </div>
-      <div class="picks-image span-1-of-3 col">
-        <div class="image-caption">
-          <p class="pick-category">이유식</p>
-          <p class="pick-title">냠냠 브로컬리 이유식</p>
-          <p class="pick-date"><i class="far fa-calendar-alt"></i> 월, 수, 금 AM 10:00 ~ PM 12:00</p>
-          <p class="pick-price"><i class="fas fa-won-sign"></i> 50,000</p>
-          <p class="pick-rate"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> (20)</p>
-        </div>
-      </div>
-      <div class="picks-image span-1-of-3 col">
-        <div class="image-caption">
-          <p class="pick-category">이유식</p>
-          <p class="pick-title">냠냠 브로컬리 이유식</p>
-          <p class="pick-date"><i class="far fa-calendar-alt"></i> 월, 수, 금 AM 10:00 ~ PM 12:00</p>
-          <p class="pick-price"><i class="fas fa-won-sign"></i> 50,000</p>
-          <p class="pick-rate"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> (20)</p>
-        </div>
-      </div>
-      <div class="picks-image span-1-of-3 col">
-        <div class="image-caption">
-          <p class="pick-category">이유식</p>
-          <p class="pick-title">냠냠 브로컬리 이유식</p>
-          <p class="pick-date"><i class="far fa-calendar-alt"></i> 월, 수, 금 AM 10:00 ~ PM 12:00</p>
-          <p class="pick-price"><i class="fas fa-won-sign"></i> 50,000</p>
-          <p class="pick-rate"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> (20)</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  
-  <section class="section-schools-pick section-popular-pick">
-    <div class="row">
-      <h2>인기 클래스</h2>
-    </div>
-    <div class="full-row clearfix picks-box">
-      <div class="picks-image span-1-of-3 col">
-        <div class="image-caption">
-          <p class="pick-category">이유식</p>
-          <p class="pick-title">냠냠 브로컬리 이유식</p>
-          <p class="pick-date"><i class="far fa-calendar-alt"></i> 월, 수, 금 AM 10:00 ~ PM 12:00</p>
-          <p class="pick-price"><i class="fas fa-won-sign"></i> 50,000</p>
-          <p class="pick-rate"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> (20)</p>
-        </div>
-      </div>
-      <div class="picks-image span-1-of-3 col">
-        <div class="image-caption">
-          <p class="pick-category">이유식</p>
-          <p class="pick-title">냠냠 브로컬리 이유식</p>
-          <p class="pick-date"><i class="far fa-calendar-alt"></i> 월, 수, 금 AM 10:00 ~ PM 12:00</p>
-          <p class="pick-price"><i class="fas fa-won-sign"></i> 50,000</p>
-          <p class="pick-rate"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> (20)</p>
-        </div>
-      </div>
-      <div class="picks-image span-1-of-3 col">
-        <div class="image-caption">
-          <p class="pick-category">이유식</p>
-          <p class="pick-title">냠냠 브로컬리 이유식</p>
-          <p class="pick-date"><i class="far fa-calendar-alt"></i> 월, 수, 금 AM 10:00 ~ PM 12:00</p>
-          <p class="pick-price"><i class="fas fa-won-sign"></i> 50,000</p>
-          <p class="pick-rate"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> (20)</p>
-        </div>
-      </div>
-      <div class="picks-image span-1-of-3 col">
-        <div class="image-caption">
-          <p class="pick-category">이유식</p>
-          <p class="pick-title">냠냠 브로컬리 이유식</p>
-          <p class="pick-date"><i class="far fa-calendar-alt"></i> 월, 수, 금 AM 10:00 ~ PM 12:00</p>
-          <p class="pick-price"><i class="fas fa-won-sign"></i> 50,000</p>
-          <p class="pick-rate"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> (20)</p>
-        </div>
-      </div>
-    </div>
-  </section>
+	<section class="section-schools-pick">
+		<div class="row">
+			<h2>School's Picks</h2>
+		</div>
+		<div class="sorting">
+			<div class="full-row clearfix picks-box">
+				<div class="picks-image span-1-of-3 col baby-option1">
+					<div class="image-caption">
+						<p class="pick-category">이유식</p>
+						<p class="pick-title">냠냠 브로컬리 이유식</p>
+						<p class="pick-date">
+							<i class="far fa-calendar-alt"></i> 월, 수, 금 AM 10:00 ~ PM 12:00</p>
+						<p class="pick-price">
+							<i class="fas fa-won-sign"></i> 50,000</p>
+						<p class="pick-rate">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i> (20)</p>
+					</div>
+				</div>
+				<div class="picks-image span-1-of-3 col baby-option1">
+					<div class="image-caption">
+						<p class="pick-category">이유식</p>
+						<p class="pick-title">냠냠 브로컬리 이유식</p>
+						<p class="pick-date">
+							<i class="far fa-calendar-alt"></i> 월, 수, 금 AM 10:00 ~ PM 12:00</p>
+						<p class="pick-price">
+							<i class="fas fa-won-sign"></i> 50,000</p>
+						<p class="pick-rate">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i> (20)</p>
+					</div>
+				</div>
+				<div class="picks-image span-1-of-3 col baby-option2">
+					<div class="image-caption">
+						<p class="pick-category">이유식</p>
+						<p class="pick-title">냠냠 브로컬리 이유식</p>
+						<p class="pick-date">
+							<i class="far fa-calendar-alt"></i> 월, 수, 금 AM 10:00 ~ PM 12:00</p>
+						<p class="pick-price">
+							<i class="fas fa-won-sign"></i> 50,000</p>
+						<p class="pick-rate">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i> (20)</p>
+					</div>
+				</div>
+				<div class="picks-image span-1-of-3 col baby-option2">
+					<div class="image-caption">
+						<p class="pick-category">이유식</p>
+						<p class="pick-title">냠냠 브로컬리 이유식</p>
+						<p class="pick-date">
+							<i class="far fa-calendar-alt"></i> 월, 수, 금 AM 10:00 ~ PM 12:00</p>
+						<p class="pick-price">
+							<i class="fas fa-won-sign"></i> 50,000</p>
+						<p class="pick-rate">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i> (20)</p>
+					</div>
+				</div>
+			</div>
+			<div class="full-row clearfix picks-box baby-option3">
+				<div class="picks-image span-1-of-3 col">
+					<div class="image-caption">
+						<p class="pick-category">이유식</p>
+						<p class="pick-title">냠냠 브로컬리 이유식</p>
+						<p class="pick-date">
+							<i class="far fa-calendar-alt"></i> 월, 수, 금 AM 10:00 ~ PM 12:00</p>
+						<p class="pick-price">
+							<i class="fas fa-won-sign"></i> 50,000</p>
+						<p class="pick-rate">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i> (20)</p>
+					</div>
+				</div>
+				<div class="picks-image span-1-of-3 col baby-option3">
+					<div class="image-caption">
+						<p class="pick-category">이유식</p>
+						<p class="pick-title">냠냠 브로컬리 이유식</p>
+						<p class="pick-date">
+							<i class="far fa-calendar-alt"></i> 월, 수, 금 AM 10:00 ~ PM 12:00</p>
+						<p class="pick-price">
+							<i class="fas fa-won-sign"></i> 50,000</p>
+						<p class="pick-rate">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i> (20)</p>
+					</div>
+				</div>
+				<div class="picks-image span-1-of-3 col baby-option3">
+					<div class="image-caption">
+						<p class="pick-category">이유식</p>
+						<p class="pick-title">냠냠 브로컬리 이유식</p>
+						<p class="pick-date">
+							<i class="far fa-calendar-alt"></i> 월, 수, 금 AM 10:00 ~ PM 12:00</p>
+						<p class="pick-price">
+							<i class="fas fa-won-sign"></i> 50,000</p>
+						<p class="pick-rate">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i> (20)</p>
+					</div>
+				</div>
+				<div class="picks-image span-1-of-3 col baby-option4">
+					<div class="image-caption">
+						<p class="pick-category">이유식</p>
+						<p class="pick-title">냠냠 브로컬리 이유식</p>
+						<p class="pick-date">
+							<i class="far fa-calendar-alt"></i> 월, 수, 금 AM 10:00 ~ PM 12:00</p>
+						<p class="pick-price">
+							<i class="fas fa-won-sign"></i> 50,000</p>
+						<p class="pick-rate">
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i> (20)</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
-  <section class="section-testimonial">
-    <div class="row">
-      <h2>Best Reviews</h2>
-    </div>
-    <div class="row">
-      <div class="span-1-of-3 col">
-        <p class="writter">강사님이 너무 친절하시고, 돈이 아깝지 않은 강의였습니다! 좋았어요. 건강한 우리 아이 건강한 재료들로 만든 이유식으로 무럭무럭 자랄 수 있을 것 같아요!</p>
-        <p class="start-rate"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
-        <img src="./img/customer-1.jpg" alt="Alberto Duncan"> 수원맘
-      </div>
-      <div class="span-1-of-3 col">
-        <p class="writter">완전 제가 원하던 서비스! 정확히 원하는 수업을 찾을 수 있고, 집 근처 수업을 보여주니까 참여하기도 수월하고 강사님도 믿을 수 있어서 너무 좋습니다</p>
-        <p class="start-rate"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
-        <img src="./img/customer-2.jpg" alt="Joana Silva"> 동탄맘예나맘
-      </div>
-      <div class="span-1-of-3 col">
-        <p class="writter">I was looking for a quick and easy food delivery service in San Franciso. I tried a lot of them and ended up with Omnifood. Best food delivery service in the Bay Area. Keep up the great work!</p>
-        <p class="start-rate"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></p>
-        <img src="./img/customer-3.jpg" alt="Milton Chapman"> Milton Chapman
-      </div>
-    </div>
-  </section>
+	<section class="section-schools-pick section-popular-pick">
+		<div class="row">
+			<h2>인기 클래스</h2>
+		</div>
+		<div class="full-row clearfix picks-box">
+			<div class="picks-image span-1-of-3 col">
+				<div class="image-caption">
+					<p class="pick-category">이유식</p>
+					<p class="pick-title">냠냠 브로컬리 이유식</p>
+					<p class="pick-date">
+						<i class="far fa-calendar-alt"></i> 월, 수, 금 AM 10:00 ~ PM 12:00</p>
+					<p class="pick-price">
+						<i class="fas fa-won-sign"></i> 50,000</p>
+					<p class="pick-rate">
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i> (20)</p>
+				</div>
+			</div>
+			<div class="picks-image span-1-of-3 col">
+				<div class="image-caption">
+					<p class="pick-category">이유식</p>
+					<p class="pick-title">냠냠 브로컬리 이유식</p>
+					<p class="pick-date">
+						<i class="far fa-calendar-alt"></i> 월, 수, 금 AM 10:00 ~ PM 12:00</p>
+					<p class="pick-price">
+						<i class="fas fa-won-sign"></i> 50,000</p>
+					<p class="pick-rate">
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i> (20)</p>
+				</div>
+			</div>
+			<div class="picks-image span-1-of-3 col">
+				<div class="image-caption">
+					<p class="pick-category">이유식</p>
+					<p class="pick-title">냠냠 브로컬리 이유식</p>
+					<p class="pick-date">
+						<i class="far fa-calendar-alt"></i> 월, 수, 금 AM 10:00 ~ PM 12:00</p>
+					<p class="pick-price">
+						<i class="fas fa-won-sign"></i> 50,000</p>
+					<p class="pick-rate">
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i> (20)</p>
+				</div>
+			</div>
+			<div class="picks-image span-1-of-3 col">
+				<div class="image-caption">
+					<p class="pick-category">이유식</p>
+					<p class="pick-title">냠냠 브로컬리 이유식</p>
+					<p class="pick-date">
+						<i class="far fa-calendar-alt"></i> 월, 수, 금 AM 10:00 ~ PM 12:00</p>
+					<p class="pick-price">
+						<i class="fas fa-won-sign"></i> 50,000</p>
+					<p class="pick-rate">
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i> (20)</p>
+				</div>
+			</div>
+		</div>
+	</section>
 
-  <section class="section-tutor clearfix">
-    <div class="row">
-      <h2>이달의 강사님</h2>
-    </div>
-    <div class="row clearfix">
-      <div class="col-12 col-md-8">
-        <div class="image-tutor">
-          <img src="./img/customer-1.jpg" alt="Alberto Duncan">
-          <p class="start-rate"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> (32)</p>
-          <p class='tutor-name'>이근환</p>
-        </div>
-        <div class='text-tutor'>
-          <p class="writter">우리 아이 키가 쑥쑥!</p>
-          <p class="writter-sub">키커 체조를 통한 성장기 우리 아이 10cm 늘리기 <br> 미국 명문대 출신 강사의 체계적인 수업 커리큘럼</p>
-          <p class='when'><i class="far fa-calendar-alt"></i> 2018. 04. 06 - 2018. 05. 28 (28일) </p>
-          <p class='where'><i class="fas fa-map-marked-alt"></i> 광진구 군자동 129 서강빌딩 3층</p>
-        </div>
-      </div>
-      <div class="col-6 col-md-4">
-        <div class='view-class'>
-          <p class="description">강사님이 진행하는 수업이 <br> 궁금하시다면</p>
-          <button class='button btn-view-tutor'>수업보기</button>
-        </div>
-      </div>
-    </div>
-  </section>
+	<section class="section-testimonial">
+		<div class="row">
+			<h2>Best Reviews</h2>
+		</div>
+		<div class="row">
+			<div class="span-1-of-3 col">
+				<p class="writter">강사님이 너무 친절하시고, 돈이 아깝지 않은 강의였습니다! 좋았어요. 건강한 우리 아이 건강한 재료들로 만든 이유식으로 무럭무럭 자랄 수 있을 것 같아요!</p>
+				<p class="start-rate">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+				</p>
+				<img src="./img/customer-1.jpg" alt="Alberto Duncan"> 수원맘
+			</div>
+			<div class="span-1-of-3 col">
+				<p class="writter">완전 제가 원하던 서비스! 정확히 원하는 수업을 찾을 수 있고, 집 근처 수업을 보여주니까 참여하기도 수월하고 강사님도 믿을 수 있어서 너무 좋습니다</p>
+				<p class="start-rate">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+				</p>
+				<img src="./img/customer-2.jpg" alt="Joana Silva"> 동탄맘예나맘
+			</div>
+			<div class="span-1-of-3 col">
+				<p class="writter">I was looking for a quick and easy food delivery service in San Franciso. I tried a lot of them and ended up with Omnifood.
+					Best food delivery service in the Bay Area. Keep up the great work!</p>
+				<p class="start-rate">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star-half-alt"></i>
+				</p>
+				<img src="./img/customer-3.jpg" alt="Milton Chapman"> Milton Chapman
+			</div>
+		</div>
+	</section>
 
-  <footer>
-    <div class="row">
-      <div class="span-1-of-2 col">
-        <ul class="footer-nav">
-          <li><a href="#">About us</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Press</a></li>
-          <li><a href="#">IOS App</a></li>
-          <li><a href="#">Android App</a></li>
-        </ul>
-      </div>
-      <div class="col span-1-of-2">
-        <ul class="social-links">
-          <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-          <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
-          <li><a href="#"><i class="fab fa-google-plus-square"></i></a></li>
-          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="row">
-      <p>
-        copyright &copy; 2018 by Beigenut. All rights reserved.
-      </p>
-    </div>
-  </footer>
-  <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+	<section class="section-tutor clearfix">
+		<div class="row">
+			<h2>이달의 강사님</h2>
+		</div>
+		<div class="row clearfix">
+			<div class="col-12 col-md-8">
+				<div class="image-tutor">
+					<img src="./img/customer-1.jpg" alt="Alberto Duncan">
+					<p class="start-rate">
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i> (32)</p>
+					<p class='tutor-name'>이근환</p>
+				</div>
+				<div class='text-tutor'>
+					<p class="writter">우리 아이 키가 쑥쑥!</p>
+					<p class="writter-sub">키커 체조를 통한 성장기 우리 아이 10cm 늘리기
+						<br> 미국 명문대 출신 강사의 체계적인 수업 커리큘럼</p>
+					<p class='when'>
+						<i class="far fa-calendar-alt"></i> 2018. 04. 06 - 2018. 05. 28 (28일) </p>
+					<p class='where'>
+						<i class="fas fa-map-marked-alt"></i> 광진구 군자동 129 서강빌딩 3층</p>
+				</div>
+			</div>
+			<div class="col-6 col-md-4">
+				<div class='view-class'>
+					<p class="description">강사님이 진행하는 수업이
+						<br> 궁금하시다면</p>
+					<button class='button btn-view-tutor'>수업보기</button>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<div class="row">
+			<div class="span-1-of-2 col">
+				<ul class="footer-nav">
+					<li>
+						<a href="#">About us</a>
+					</li>
+					<li>
+						<a href="#">Blog</a>
+					</li>
+					<li>
+						<a href="#">Press</a>
+					</li>
+					<li>
+						<a href="#">IOS App</a>
+					</li>
+					<li>
+						<a href="#">Android App</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col span-1-of-2">
+				<ul class="social-links">
+					<li>
+						<a href="#">
+							<i class="fab fa-facebook-square"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="fab fa-twitter-square"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="fab fa-google-plus-square"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="fab fa-instagram"></i>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="row">
+			<p>
+				copyright &copy; 2018 by Beigenut. All rights reserved.
+			</p>
+		</div>
+	</footer>
+	<script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<script>
+		function listPage() {
+			swal({
+				icon: "success",
+				title: "검색이 완료되었습니다.",
+			}).then((value) => {
+				window.location.replace('/listPage.html')
+			})
+		}
+	</script>
+
 </body>
 
 </html>
